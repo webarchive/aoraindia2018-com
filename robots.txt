@@ -1,4 +1,5 @@
+User-agent: *
+Allow: /
+
 Sitemap: https://aoraindia2018-com.webarchive.opub.in/sitemap.xml
-User-Agent: *
-Disallow: 
 
