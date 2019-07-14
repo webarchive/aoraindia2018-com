@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AORA INDIA 2018 | AORA Thiruvananthapuram 2018</title>
+<meta name="description" content="AORA INDIA 2018"><meta name="keywords" content="">
+<meta name="author" content="AORA INDIA 2018">
+
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/style1.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
+<script type="text/javascript" rel="javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" rel="javascript" src="js/jquery.validate.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<!--Banner-->
+<link href="css/nivo-slider.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#slider').nivoSlider();
+});
+</script>
+<link rel="stylesheet" href="assets/slicknav.css">
+<script src="assets/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>
+
+
+<!--Tab--> 
+<script src="js/easy-responsive-tabs.js"></script>
+<link rel="stylesheet" href="css/easy-responsive-tabs.css">
+<script>
+$(document).ready(function () {
+$('#horizontalTab').easyResponsiveTabs({
+type: 'default', //Types: default, vertical, accordion           
+width: 'auto', //auto or any width like 600px
+fit: true,   // 100% fit in a container
+closed: 'accordion', // Start closed if in accordion view
+activate: function(event) { // Callback function if tab is switched
+var $tab = $(this);
+var $info = $('#tabInfo');
+var $name = $('span', $info);
+$name.text($tab.text());
+$info.show();
+}
+});
+$('#verticalTab').easyResponsiveTabs({
+type: 'vertical',
+width: 'auto',
+fit: true
+});
+});
+</script> 
+<!--Tab-->
+
+
+
+<!--Banner-->
+<link href="css/media.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<!--Header-->
+<div class="HeaderBg">
+  <div class="Wrapper">
+    <div class="Header">
+      <div class="HeaderLeft"> <a href="index.html"><img src="images/logo.png"></a> </div>
+      <div class="HeaderCenter">
+        <h2>8<sup>th</sup> National Conference of the Academy of Regional Anaesthesia of India</h2>
+          <p>Date: 10<sup>th</sup>, 11<sup>th</sup> &	 12<sup>th</sup> August 2018</p>
+        <p style="color:#FFA200;"> <strong>Venue : AL SAJ Convention Centre, Thiruvananthapuram, Kerala</strong></p>
+      
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--Header-->
+<!-- Add jQuery library -->
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="js/thumbnailjs/source/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="js/thumbnailjs/source/jquery.fancybox.css" media="screen" />
+<!-- Add Thumbnail helper (this is optional) -->
+<link rel="stylesheet" type="text/css" href="js/thumbnailjs/source/helpers/jquery.fancybox-thumbs-v=2.0.4.css" />
+<script type="text/javascript" src="js/thumbnailjs/source/helpers/jquery.fancybox-thumbs-v=2.0.4.js"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				Simple image gallery. Uses default settings
+			*/
+			
+
+			$('.fancybox').fancybox();
+
+			/*
+				Different effects
+			*/
+
+			// Change title type, overlay opening speed and opacity
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedIn : 500,
+						opacity : 0.95
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background-color' : '#eee'	
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+				Button helper. Disable animations, hide close button, change title type and content
+			*/
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+				Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			*/
+			
+			
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : true,
+				arrows    : true,
+				nextClick : true,
+
+				helpers : { 
+				title	: {
+				type: 'inside'
+			},
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+
+			/*
+				Open manually
+			*/
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50	
+						}
+					}	
+				});
+			});
+
+
+		});
+	</script>
+<style type="text/css">.fancybox-custom .fancybox-outer {
+	box-shadow: 0 0 50px #222;
+}
+</style>
+<!--menu-->
+<div class="MenuBg">
+  <div class="Menu">
+    <ul id="menu">
+      <li> <a href="#">Home</a>
+        <ul>
+        
+        
+        <li> <a href="index.html">Home</a></li>
+          <li> <a href="about.html">AORA THIRUVANANTHAPURAM </a> </li>
+          <li> <a href="about_aora.html">ACADEMY OF REGIONAL ANAESTHESIA (AORA)</a> </li>
+          <li> <a href="journey.html">Journey of AORA</a> </li>
+        </ul>
+      </li>
+      <li> <a href="messages.html">Message</a> 
+        <!--  <ul>
+          <li> <a href="message_chairman.php">Message / National Chairman</a> </li>
+         
+        </ul>--> 
+        
+      </li>
+      <li> <a href="#">Committees</a>
+        <ul>
+          <li> <a href="committee.html">ORGANISING COMMITTEE</a> </li>
+          <li> <a href="national-committee.html">AORA NATIONAL EXECUTIVE COMMITTEE</a> </li>
+        </ul>
+      </li>
+      <li> <a href="#">Faculty</a>
+        <ul>
+          <li> <a href="international_faculty.html">International Faculty</a></li>
+          <li><a href="national_faculty.html">National Faculty </a></li>
+           <li><a href="exclusive_workshop_faculty.html">Exclusive Workshop Faculty</a></li>
+        </ul>
+      </li>
+      <!--<li> <a href="#">Registration</a> 
+        <ul>
+         <li> <a href="registration_details.php">Registration Details</a></li>
+          <li> <a href="registered_delegate.php">Registered Delegates</a> </li>
+          
+        </ul> 
+      </li>-->
+     <!-- <li> <a href="#">Abstracts</a>
+        <ul>
+          <li> <a href="abstract_guidelines.php">Abstract Guideline</a> </li>
+          <li> <a href="submit_abstract.php">Submit an Abstract</a> </li>
+          <li> <a href="selected_abstracts.php">Selected Abstracts</a> </li>
+          <li> <a href="e_poster_podium_template.php">E-poster / Podium Template</a> </li>
+        </ul>
+      </li>-->
+      <li><a href="#">Scientific Program</a>
+        <ul>
+          <li><a href="pdf/day1_scientific_program.pdf" target="_blank">Day 1 Scientific Program</a></li>
+          <li><a href="pdf/day2_scientific_program.pdf" target="_blank">Day 2 Scientific Program</a></li>
+          <li><a href="pdf/day3_workshop.pdf" target="_blank">Day 3 Workshops</a></li>
+          <li><a href="workshop_delegates.html">Workshop Delegates </a></li>
+        </ul>
+      </li>
+      <li class="SonoSite"><a href="sonosite_fellowship-result.html" style="background: #db5de5;">AORA FUJIFILM SonoSite Fellowship-Results</a></li>
+      <li><a href="edra.html">EDRA Exam</a></li>
+      <li><a href="venue.html">Venue</a></li>
+      
+      <li><a href="accommodation.html">Accommodation</a></li>
+      <li><a href="stall_layout.html">Stall Layout</a> </li>
+       
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<!--menu-->
+<div class="clear"></div>
+<div class="InnerBg">
+  <div class="InnerHead bg_color">
+    <h2>Welcome Message</h2>
+  </div>
+  <div class="wrapper">
+    <div class="InnerPage">
+      <div class="message">
+        <div class="messagebox">
+          <h1>Message from Chairman</h1>
+          <table>
+            <tr>
+              <td width="28%"><img src="images/dr-balavengkat.jpg" /></td>
+              <td><p><strong>Dr. Balavenkat</strong><br />
+                  National Chairman AORA India.</p></td>
+            </tr>
+          </table>
+          <p>Dear Colleagues,</p>
+          <p>Greetings</p>
+          <p>It would be a pleasure to have you with us for the annual national conference of Academy of Regional Anaesthesia of India scheduled to be held in August in one of the must see places in India, the Kovalam.</p>
+          <p>One of the most important ingredient of the current anaesthesia practise is to incorporate Regional Anaesthesia as apart of every surgery. The benefits seem to outweigh the risks. Hence it is prudent that every anaesthesiologists have to equip themselves with the various facets of Regional Anaesthesia. The primary objective of AORA India is to promote safe practise of Regional Anaesthesia. AORA India 2018 will offer the delegates the best learning experience in Regional anaesthesia.</p>
+          <p>The team led by Dr Sajeesh is all set to give us a very memorable time.</p>
+          <p> Kindly be with us and enrich the meeting.</p>
+          <p> Looking forward to welcoming you all in God's own country Kerala. </p>
+        </div>
+        <div class="messagebox">
+          <h1>Message from President</h1>
+          <table>
+            <tr>
+              <td width="28%"><img src="images/dr-tvs-gopal.jpg" /></td>
+              <td><p><strong>Dr. T.V.S. Gopal</strong><br />
+                  President, AORA INDIA</p></td>
+            </tr>
+          </table>
+          <p>Dear Friends & Colleagues,</p>
+          <p>August 10,  11 &amp; 12, 2018, dates for the Eighth National Conference of Academy of  Regional Anaesthesia of India, will emerge as yet another milestone in the  journey of AORA INDIA. As always, I look forward to hearty participation from  regional anaesthesia enthusiasts. Lexicographer Erin McKean said,&rdquo; For me,  conferences are like little mental vacations : a chance to go visit an  interesting place for a couple of days, and come back rested and refreshed with  new ideas and perspectives&rdquo;.  Truly  spoken. In today&rsquo;s hectic pace of life, we all look forward to such breaks to  rejuvenate in the company of friends and like minded colleagues while learning from accomplished faculty. The organizing  committee headed by the energetic Dr. Sajeesh Gopalan is working overtime to  deliver a scientific meeting that can be cherished. You are requested to kindly  visit <a href="index.html">www.aoraindia2018.com</a> for  information and consider registration. Your presence at this conference is  important to us. Please do come to Trivandrum and present us with the  opportunity to host you in the capital city of God&rsquo;s own country.</p>
+          <p>Best wishes,</p>
+        </div>
+        <div class="messagebox">
+          <h1>Message from Secretary</h1>
+          <table>
+            <tr>
+              <td width="28%"><img src="images/vrushali-ponde.jpg" /></td>
+              <td><p><strong>Dr. Vrushali Ponde</strong><br />
+                  AORA National Secretary</p></td>
+            </tr>
+          </table>
+          <p>Dear Friends,</p>
+          <p>A revered Namaste!</p>
+          <p>On behalf of the Academy of Regional Anaesthesia of India, it is my pleasure to invite all  accomplished anaesthesiologists, budding students, academicians and young researchers, from all over country, and the world, to attend the Eighth National Conference of Academy of Regional Anaesthesia. This focused and dedicated conference shall be held on August 10, 11 & 12, 2018, in Thiruvananthapuram, Kerala.</p>
+          <p>Over the years, we were fortunate to have steadfast commitment from our delegates, a feature we treasure immensely.</p>
+          <p>Since this conference covers very detailed aspects on regional anaesthesia from fundamental issues to practical applications, anyone interested in future and current progress should not miss this event. AORA conferences are known to share  insights into the recent research and cutting-edge technologies, which generates interest with the exuberant presence of adept and brilliant faculty.</p>
+          <p>Workshops remain the most sought-after aspect of this event, where delegates drop all guards and ask every question they wanted to ask and get answers in return.</p>
+          <p>We’re looking forward to an excellent meeting with great faculty from different countries around the world.</p>
+          <p>But our strength lies in the delegates who are so committed to the cause of progress with the belief that patient care improves!</p>
+        </div>
+        <div class="messagebox">
+          <h1>Message from The Academic Director</h1>
+          <table>
+            <tr>
+              <td width="28%"><img src="images/sandeep-diwan.jpg" /></td>
+              <td><p><strong>Dr. Sandeep M. Diwan</strong><br />
+                  Academic Director - AORA India</p></td>
+            </tr>
+          </table>
+          <p>Dear Colleagues,</p>
+          
+          <p>It gives me great pleasure extending an invitation to you all  for the academic extravaganza at AORA 2018 in Trivandrum. AORA grows stronger by the year thanks to stellar contributions by regional anesthesia enthusiasts. It has been the mission of AORA to equip anaesthesiologists in India with all the latest advances in this expanding field.</p>
+          <p>In an attempt to reach the remotest of areas, AORA faculties are conducting workshops, CME’s  and conferences throughout the length and breadth of the country, thereby generating interest among a wider cross section of anaesthesiologists, especially those working with limited resources. A highlight without doubt over the last two years were the cadaveric workshops.</p>
+          <p>This year the academic sessions are planned to meet the needs of both the novice and the expert. A balance between the basics and advances will keep the delegates engrossed for two days. </p>
+          <p>Renowned international faculties, Jeff Gadsden, Phillipe Gautier and Nicholas Scott are going to make their mark in AORA 2018. It would be great to hear their original contributions. The national faculties include a blend from the major centres and remote locations in India. </p>
+          <p>As the D day approaches, I urge  all to register for AORA 2018 conference and experience the endearing hospitality of the local organizing committee. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="Clear"> </div>
+<div class="FooterBottom">
+  <div class="Wrapper">
+    <div class="FooterBtm1">Copyrights &copy; AORAINDIA 2018</div>
+    <div class="FooterBtm2">Design by <a href="http://krithitechnologies.com/" target="_blank">Krithi</a> </div>
+  </div>
+</div>
+<link rel="stylesheet" href="css/SliderStyle.css" type="text/css" media="screen" />
+<script src="js/jquery.utilcarousel.js"></script> 
+       
+         <script>
+			eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('$(J(){$(\'#I-K\').6({d:\'0\',0:[v,s],e:7,p:q});$(\'#L\').6({d:\'0\',0:[v,H]});$(\'#N-h\').6({d:\'0\',0:[s,G]});$(\'#B\').6({g:7,m:[\'<i c="b-l-a-8"></i>\',\'<i c=" b-o-a-8"></i>\'],f:[[C,5],[n,4],[z,3],[y,2],[x,1]]});$(\'#t-D\').6({k:9,m:[\'<i c="b-l-a-8"></i>\',\'<i c=" b-o-a-8"></i>\'],g:7,j:9});$(\'#t-E\').6({k:9,d:\'0\',0:[M,O],m:[\'<i c="b-l-a-8"></i>\',\'<i c=" b-o-a-8"></i>\'],g:7,j:9});$(\'#u-h\').6({d:\'0\',0:[w,r]});$(\'#u-h-Q\').6({A:5,d:\'0\',0:[w,r],p:q,e:7,k:9});$(\'#W\').6({A:1,f:[[F,1]],e:7});$(\'#V\').6({f:[[X,1],[R,2],[n,3],[S,4],[Y,5]],P:7,j:9});$(\'#T\').6({U:[[n,4],[z,3],[y,2],[x,1]]})});',61,61,'itemWidthRange||||||utilCarousel|true|big|false|open|icon|class|responsiveMode|autoPlay|breakPoints|navigation|showcase||rewind|pagination|left|navigationText|1200|right|interval|3000|210|300|normal|logo|260|200|480|768|992|showItems|navtopbox|1900|imglist|imglist2|1920|360|320|features|function|carousel|simpleImg|100|team|130|mouseWheel|gray|900|1500|portfolio|breakPosints|fullwidth|testimonial1|600|1800'.split('|'),0,{}))
+		</script> 
+        
+        
+        <!--Faculty img scroll-->
+
+</body></html>

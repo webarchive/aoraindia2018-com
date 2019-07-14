@@ -1,0 +1,1017 @@
+@media screen and (max-width: 1199px) {
+.wrapper, .Wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+}
+
+/*****************Menu *****************/
+@media screen and (min-width: 200px) and (max-width: 850px) {
+.slicknav_menu {
+	display: block;
+}
+.MenuBg {
+	display: none;
+}
+.Menu ul {
+	margin-left: 0px;
+}
+.Menu {
+	display: block;
+	left: 25%;
+	position: absolute;
+	text-align: center;
+	width: 50%;
+	z-index: 100;
+}
+.Menu li ul li:hover ul li a:hover {
+	background: none;
+}
+.MenuBg h1 a {
+	padding-top: 5px;
+	font-size: 17px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+}
+.MenuBg h1 a:hover {
+	color: #000;
+}
+.Menu li:hover ul {
+	display: none;
+}
+.Menu ul li {
+	border-bottom: 1px dashed #cca402;
+	display: inline-block;
+}
+.Menu ul li a {
+	background: none;
+	padding: 5px 8px;
+	display: block;
+}
+.Menu ul li a:hover {
+	display: block;
+	padding: 5px 8px;
+}
+.MenuBg ul li ul {
+	background: #ad0407;
+}
+.MenuBg ul li ul li {
+	border-bottom: 1px dashed #e4e3e3;
+	padding: 0px;
+}
+.Menu ul li ul {
+	padding: 0px;
+}
+.Menu ul li ul li a {
+	padding: 5px 8px;
+}
+.Menu ul li ul li a:hover {
+	padding: 5px 8px;
+	background: #000000;
+}
+.accordion {
+	width: 100%;
+	margin: auto;
+	background: #ffcc00;
+	overflow: hidden;
+}
+.accordion .link {
+	cursor: pointer;
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.accordion .link:hover {
+	color: #000;
+}
+.accordion li:last-child .link {
+	border-bottom: 0;
+}
+.accordion li i {
+	position: absolute;
+	top: 16px;
+	left: 12px;
+	font-size: 18px;
+	color: #595959;
+	background: url("images/Arrow.jpg.html") no-repeat;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.accordion li i.Arrow-down {
+	right: 12px;
+	left: auto;
+	font-size: 16px;
+	background: url("../images/Arrow-down.jpg.html") no-repeat;
+}
+.accordion li.open .link {
+	color: #000;
+}
+.accordion li.open i {
+	color: #b63b4d;
+}
+.accordion li.open i.fa-chevron-down {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+}
+ @media screen and (max-width: 499px) {
+.js #menu {
+	display: none;
+}
+.js .slicknav_menu {
+	display: block;
+}
+}
+ @media screen and (min-width: 500px) and (max-width: 850px) {
+.js #menu {
+	display: none;
+}
+.js .slicknav_menu {
+	display: block;
+}
+.slicknav_nav, .slicknav_nav ul {
+	width: 300px;
+	margin: auto;
+}
+.MenuBg {
+	display: none;
+}
+}
+ @media screen and (min-width: 200px) and (max-width: 850px) {
+.slicknav_menu {
+	display: block;
+}
+}
+ @media screen and (min-width: 200px) and (max-width: 1190px) {
+.Menu ul li a {
+	padding: 11px;
+	font-size: 15px;
+}
+.Menu {
+	width: 100%;
+}
+}
+ @media screen and (min-width: 1025px) and (max-width: 1190px) {
+.Menu ul li {
+	float: none;
+	display: inline-block;
+}
+}
+ @media screen and (min-width: 1025px) and (max-width: 1190px) {
+.slicknav_menu {
+	display: none;
+}
+}
+/***************** Menu  *****************/
+/***************** Header  *****************/
+@media screen and (max-width: 650px) {
+.HeaderBg {
+	background-size: cover;
+	overflow: hidden;
+}
+.HeaderLeft {
+	display: block;
+	margin: auto;
+	padding: 10px 0 0 0;
+	text-align: center;
+}
+.HeaderCenter {
+	width: auto;
+	display: block;
+	margin: auto;
+	padding: 0 10px;
+	text-align: center;
+}
+.HeaderCenter h2 {
+	font-size: 18px;
+	margin: 5px auto;
+	line-height: 28px;
+}
+.HeaderCenter p {
+	font-size: 16px;
+	margin: 3px auto;
+	float: none;
+	margin-right: 0;
+}
+}
+@media screen and (min-width: 651px) and (max-width:950px) {
+.HeaderLeft {
+	margin: 45px 5px;
+}
+.HeaderCenter {
+	width: 70%;
+}
+.HeaderCenter h2 {
+	font-size: 21px;
+	line-height: 24px;
+}
+.HeaderCenter p {
+	font-size: 16px;
+	margin: 10px 0 0 0;
+	line-height: 18px;
+}
+}
+ @media screen and (min-width: 951px) and (max-width:1200px) {
+.HeaderLeft {
+	margin: 45px 5px;
+}
+.HeaderCenter {
+	width: 70%;
+}
+.HeaderCenter h2 {
+	font-size: 30px;
+}
+}
+/***************** Header  *****************/
+
+
+/***************** Home  *****************/
+@media screen and (max-width: 650px) {
+.welcome_messagebg {
+	padding: 25px 7px;
+}
+.welcome_left {
+	width: auto;
+	float: none;
+}
+.welcome_left h3 {
+	font-size: 23px;
+	line-height: 31px;
+}
+.welcome_right {
+	margin: 10px 0;
+	width: auto;
+	float: none;
+}
+.timer-area ul li {
+	width: 28%;
+}
+.timer-area ul li span {
+	font-size: 39px;
+}
+.journeyaora {
+	width: auto;
+}
+.container2bg {
+	padding: 10px 0;
+	background-size: cover;
+}
+.container2top {
+	float: none;
+	width: auto;
+	padding: 0 23px;
+	margin: 10px 0;
+}
+a .container2section1, a .container2section2, a .container2section3, a .container2section4, a .container2section5, a .container2section6, a .container2section8 {
+	display: block;
+	width: auto;
+	margin: 10px auto;
+	float: none;
+	padding: 25px 0;
+}
+.container2bottom {
+	float: none;
+	overflow: hidden;
+	width: auto;
+	padding: 0 23px;
+}
+a .container2section4, a .container2section5, a .container2section6 {
+	float: none;
+}
+.container2 a {
+	text-decoration: none;
+}
+.conatainer4 {
+	padding: 10px;
+}
+.weather {
+	width: 70%;
+	margin: 0px auto 10px;
+	background: #9b59b6;
+	overflow: hidden;
+	padding: 0;
+}
+.weather a {
+	width: 40%;
+	display: block;
+	margin: 15px auto 15px;
+}
+.youtube_home {
+	margin: 0px 0 0;
+}
+.youtube_home iframe {
+	height: auto;
+	width: 70%;
+}
+.flagss {
+	width: 100%;
+}
+.flagss img {
+	width: 100%;
+}
+.container4left {
+	width: 100%;
+	float: none;
+	margin: 0 0 10px;
+}
+.conatiner4right {
+	width: 100%;
+	float: none;
+}
+.conatainer4 h3 {
+	font-size: 25px;
+	margin: 0 0 10px 0;
+}
+.container4left p {
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0px 0 10px;
+}
+}
+ @media screen and (max-width: 767px) {
+.conatainer4 {
+	padding: 0px;
+}
+.container4left, .conatiner4right {
+	width: 95%;
+	float: none;
+	padding: 0;
+	margin: 0 auto 10px;
+}
+.conatainer4 h3 {
+	font-size: 25px;
+}
+.container4left p {
+	font-size: 17px;
+	line-height: 22px;
+	margin: 10px 0;
+}
+.youtube_home {
+	margin: 15px 0 0;
+}
+.youtube_home iframe {
+	height: auto;
+	width: 60%;
+}
+}
+ @media screen and (max-width: 424px) {
+.weather {
+	width: 100%;
+	margin: 0px auto 10px;
+	background: #9b59b6;
+	overflow: hidden;
+	padding: 0;
+}
+.youtube_home {
+	margin: 0;
+}
+.youtube_home iframe {
+	height: auto;
+	width: 100%;
+}
+}
+ @media screen and (min-width: 651px) and (max-width:1180px) {
+.welcome_messagebg {
+	padding: 25px 10px;
+}
+.welcome_left h3 {
+	font-size: 24px;
+	line-height: 28px;
+}
+.welcome_right {
+	width: 38%;
+	margin: 0 0 0 25px;
+}
+.timer-area ul li {
+	width: 35%;
+	margin: 16px 6px;
+}
+.timer-area ul li span {
+	font-size: 40px;
+}
+}
+ @media screen and (max-width: 499px) {
+.container3right ul li {
+	display: block;
+	width: auto;
+	margin: 0 0 35px 0;
+}
+.container3right {
+	width: auto;
+	float: none;
+}
+.container3left {
+	width: auto;
+	float: none;
+}
+.FooterBottom {
+	text-align: center;
+}
+.FooterBtm1, .FooterBtm2 {
+	float: none;
+}
+}
+@media screen and (min-width: 500px) and (max-width:700px) {
+.container3right {
+	width: auto;
+	float: none;
+}
+.container3left {
+	width: auto;
+	float: none;
+}
+}
+@media screen and (min-width: 701px) and (max-width:965px) {
+.container3right {
+	width: 57%;
+}
+.container3left {
+	float: left;
+	width: 43%;
+	padding: 58px 0 0 0;
+}
+}
+/***************** Home  *****************/
+
+
+/***************** about  *****************/
+ @media screen and (max-width: 550px) {
+.InnerPage {
+	padding: 0;
+}
+.InnerHead h2 {
+	font-size: 23px;
+	padding: 42px 0;
+	line-height: 26px;
+}
+.aboutLeft {
+	float: none;
+	width: auto;
+}
+.aboutRight {
+	float: none;
+	width: auto;
+	margin: 20px 0 0 0;
+}
+.Events_Tabs ul li {
+	display: block;
+	width: auto;
+}
+.Events_Tabs ul li a {
+	font-size: 16px;
+	padding: 14px 0px;
+}
+.gallery_Section ul li {
+	display: block;
+	width: auto;
+}
+}
+ @media screen and (min-width: 551px) and (max-width:950px) {
+.InnerPage {
+	padding: 0;
+}
+.InnerPage_Right {
+	width: auto;
+}
+.aboutRight {
+	width: 26%;
+	margin: 0 0 0 10px;
+}
+.Events_Tabs ul li {
+	vertical-align: top;
+}
+}
+ /***************** about  *****************/
+ 
+ 
+ 
+ /***************** messages  *****************/
+ @media screen and (max-width: 550px) {
+.messagebox {
+	width: auto;
+	display: block;
+}
+.messagebox table tr td {
+	display: block;
+	text-align: center;
+	width: auto !important;
+}
+.messagebox table tr td p {
+	text-align: center;
+}
+}
+ @media screen and (min-width: 551px) and (max-width:900px) {
+.messagebox {
+	width: auto;
+}
+}
+  /***************** messages  *****************/
+  
+  
+  
+   
+ /***************** committee  *****************/
+ @media screen and (max-width: 550px) {
+.Executive_Committee1 ul li {
+	display: block;
+	width: auto;
+}
+.Executive_Committee2 ul li {
+	display: block;
+}
+}
+ @media screen and (min-width: 551px) and (max-width:950px) {
+.Executive_Committee1 ul li {
+	width: 45%;
+}
+}
+ /***************** committee  *****************/
+ 
+ 
+ 
+  /***************** abstract_guidelines  *****************/
+ @media screen and (max-width: 550px) {
+.abstract_guidelines {
+	width: auto;
+	margin: 10px auto;
+}
+}
+ @media screen and (min-width: 769px) and (max-width:950px) {
+.resp-vtabs .resp-tabs-list li {
+	width: 35%;
+}
+.resp-vtabs li.resp-tab-active {
+	width: 35%;
+}
+}
+/***************** abstract_guidelines  *****************/
+  
+   
+/***************** sonosite_fellowship  *****************/
+ @media screen and (max-width: 550px) {
+.sonasite_fellowship table tr td {
+	display: block;
+	text-align: left;
+}
+.sonasite_fellowship .subheadingbg {
+	background: #d2d2d2;
+}
+.sonasite_fellowship h3 {
+	text-align: left;
+}
+.sonasite_exam {
+	text-align: center;
+}
+.sonasite_exam img {
+	float: none;
+}
+.sonasite_exam p {
+	float: none;
+	margin: 16px;
+}
+.sonasite_applicants tr.sonasite_subheading td {
+	width: auto;
+}
+}
+ @media screen and (min-width: 551px) and (max-width:950px) {
+.sonasite_fellowship table tr td {
+	text-align: left;
+}
+}
+ @media screen and (min-width: 551px) and (max-width:695px) {
+.sonasite_exam {
+	text-align: center;
+}
+.sonasite_exam img {
+	float: none;
+}
+.sonasite_exam p {
+	float: none;
+	margin: 16px;
+}
+}
+/***************** sonosite_fellowship  *****************/
+
+
+
+/***************** edra  *****************/
+ @media screen and (max-width: 1199px) {
+.edra {
+	margin: 0 11px;
+}
+.Official_Website1 {
+	width: auto;
+}
+.Official_Website1 a {
+	font-size: 23px;
+}
+}
+ 
+ /***************** edra  *****************/
+ 
+ 
+ /***************** venue  *****************/
+ @media screen and (max-width: 990px) {
+.venue h2 {
+	font-size: 19px;
+}
+}
+  /***************** venue  *****************/
+  
+  
+  
+   /***************** contact  *****************/
+ @media screen and (max-width: 755px) {
+.contact_left {
+	width: auto;
+	display: block;
+	margin: 0 0 0 10px;
+}
+.conatct_right {
+	width: auto;
+	display: block;
+	margin: 40px 0 0 0;
+}
+.conatct_right ul li.SecurityCode {
+	width: auto;
+}
+}
+
+
+/***************** contact  *****************/
+
+
+
+/***************** submit_abstract  *****************/
+ @media screen and (max-width: 755px) {
+.Row {
+	width: auto;
+	padding: 0 0 0 15px;
+}
+.Row ul {
+	display: block;
+	width: auto;
+}
+.Field1 ul li {
+	display: block;
+}
+.AbsSecondRow ul li label {
+	display: block;
+}
+.AbsSecondRow input[type="text"] {
+	width: 230px;
+}
+.Field1 {
+	display: block;
+	width: auto;
+}
+li.FirstName {
+	width: auto;
+	margin: 0;
+}
+li.LastName {
+	width: auto;
+}
+li.Quali {
+	width: auto;
+}
+li.Insti {
+	width: auto;
+}
+.AbsThirdRow {
+	width: auto;
+	padding: 0 0 0 15px;
+}
+.AbsThirdRow textarea {
+	width: 230px;
+}
+#cke_abstract_template {
+	width: 83% !important;
+}
+.Security label {
+	width: auto;
+}
+.AbstractSubmissionSubmit {
+}
+}
+@media screen and (min-width: 756px) and (max-width:1038px) {
+li.FirstName {
+	width: 32%;
+}
+li.LastName {
+	width: 32%;
+}
+li.Quali {
+	width: 32%;
+}
+li.Insti {
+	width: 32%;
+}
+.AbsThirdRow textarea {
+	width: 320px;
+}
+#cke_abstract_template {
+	width: 63% !important;
+}
+}
+/***************** submit_abstract  *****************/
+
+
+
+/***************** ViewAbstract  *****************/
+ @media screen and (max-width: 499px) {
+.ViewAbstract table tr td {
+	display: block;
+	width: auto;
+}
+.SecondRow table tr.TitleBg {
+	display: none;
+}
+.SecondRow td:nth-of-type(1):before {
+	content: "Co Author First Name";
+}
+.SecondRow td:nth-of-type(2):before {
+	content: "Co Author Last Name";
+}
+.SecondRow td:nth-of-type(3):before {
+	content: "Co Author Qualification";
+}
+.SecondRow td:nth-of-type(4):before {
+	content: "Co Author Institution";
+}
+.SecondRow td:before {
+	display: block;
+	background: #b9a4f8;
+	color: #000;
+	padding: 3px 4px;
+	margin: 0 0 3px 0;
+}
+}
+@media screen and (min-width: 500px) and (max-width:750px) {
+.ViewAbstract {
+	width: auto;
+}
+}
+/***************** ViewAbstract  *****************/
+
+
+
+/***************** Registration details  *****************/
+ @media screen and (max-width: 818px) {
+.registration_details .subheadingbg {
+	display: none;
+}
+.registration_details .headingbg {
+	display: none;
+}
+.registration_details td.Headtab {
+	background: #333333;
+	color: #ffffff;
+}
+.registration_details td.Headtab p.reg_del {
+	color: #fff;
+}
+.registration_details table tr td {
+	display: block;
+	text-align: center;
+}
+.registration_details td p.reg_del {
+	display: block;
+	color: #6842b9;
+}
+}
+ /***************** Registration details  *****************/
+ /******************sponsorship ******************/
+ @media screen and (max-width: 818px) {
+.sponsorship1 {
+	width: 95%;
+	margin: auto
+}
+.sponsorship1 img {
+	width: 90%;
+	padding: 0;
+}
+.sponsorship1 h2 {
+	font-size: 20px;
+}
+}
+@media screen and (min-width: 200px) and (max-width:767px) {
+.InnerPage_Right {
+	width: 95%;
+	padding: 10px 10px;
+	margin: 0 auto 0;
+	overflow: hidden;
+}
+.Fellowship_Form h2 {
+	font-size: 16px;
+}
+.Fellowship_Form {
+	width: 100%;
+}
+}
+@media screen and (min-width: 200px) and (max-width:599px) {
+.Fellowship_Form ul li {
+	width: 98%;
+	margin: auto;
+	float: none;
+}
+.Fellowship_Form .SecurityCode {
+	width: 65%;
+}
+.Fellowship_Form .SecurityImage {
+	width: 20%;
+}
+.Fellowship_Form ul li.sec_img {
+	margin: 5px;
+}
+.Fellowship_Form .submit_button {
+	float: none;
+	overflow: inherit;
+	margin: 0 auto;
+	vertical-align: top;
+}
+.Fellowship_Form .submit_button input[type="submit"] {
+	margin: 0px auto 0;
+	width: 200px;
+}
+}
+ @media screen and (min-width: 600px) and (max-width:767px) {
+.Fellowship_Form {
+	width: auto;
+	padding: 10px;
+}
+.Fellowship_Form ul li {
+	width: 48%;
+	margin: auto;
+	display: inline-block;
+	float: none;
+}
+.Fellowship_Form .SecurityCode {
+	width: 65%;
+}
+.Fellowship_Form .SecurityImage {
+	width: 20%;
+}
+.Fellowship_Form ul li.sec_img {
+	margin: 5px;
+}
+.Fellowship_Form .submit_button {
+	float: none;
+	overflow: inherit;
+	margin: 0 auto;
+	vertical-align: top;
+}
+.Fellowship_Form .submit_button input[type="submit"] {
+	margin: 0px auto 0;
+	width: 200px;
+}
+}
+/*Faculty*/
+@media screen and (max-width: 650px) {
+.faculty ul li {
+	display: block;
+	width: 85%;
+	margin: 10px auto;
+}
+}
+ @media screen and (min-width: 600px) and (max-width:1024px) {
+.faculty ul {
+	text-align: center;
+}
+.faculty ul li {
+	margin: 10px;
+	padding: 10px;
+}
+}
+
+/*national_faculty*/
+ @media screen and (max-width: 550px) {
+.national_faculty ul li {
+	width: auto;
+	display: block;
+}
+}
+ @media screen and (min-width: 551px) and (max-width:900px) {
+.national_faculty ul li {
+	width: 45%;
+}
+}
+ /*national_faculty*/
+ 
+ 
+/*exclusive_faculty*/
+ @media screen and (max-width: 550px) {
+.exclusive_faculty ul li {
+	width: auto;
+	display: block;
+}
+}
+ @media screen and (min-width: 551px) and (max-width:900px) {
+.exclusive_faculty ul li {
+	width: 45%;
+}
+}
+/*exclusive_faculty*/
+
+/*Accommodation*/
+ @media screen and (max-width: 550px) {
+.accommodation .headingbg, .accommodation tr th {
+	display: none;
+}
+.accommodation table {
+	background: none;
+}
+.accommodation tr {
+	display: block;
+	width: 100%;
+	background: #efefef;
+	margin: 42px auto;
+	box-shadow: 1px 2px 10px #000;
+}
+.accommodation tr td {
+	display: block;
+	text-align: center;
+	border: none;
+	padding: 5px 0;
+	border-bottom: 1px solid #ffc6b6;
+}
+.accommodation td:before, .accommodation td p:after {
+	color: #aa1cca;
+	padding: 10px 0;
+	width: 100%;
+	display: block;
+	font-size: 18px;
+}
+.accommodation td:nth-of-type(1):before {
+	content: "Location";
+}
+.accommodation td:nth-of-type(2):before {
+	content: "Name of the Hotel";
+}
+.accommodation td:nth-of-type(3):before {
+	content: "Base Cateogary";
+}
+.accommodation td:nth-of-type(4):before {
+	content: "Rack Rate Single/Double";
+}
+.accommodation td:nth-of-type(5):before {
+	content: "Special Rate Single/Double";
+}
+.accommodation td:nth-of-type(6):before {
+	content: "Second Category";
+}
+.accommodation td:nth-of-type(7):before {
+	content: "Rack Rate Single/Double";
+}
+.accommodation td:nth-of-type(8):before {
+ content: "Special Rate Single/Double.";
+}
+.accommodation td:nth-of-type(9):before {
+	content: "Distance from Venue";
+}
+.accommodation td:nth-of-type(10):before {
+	content: "Contact Details";
+}
+.accommodation table td p {
+	display: block;
+	color: #F30;
+	font-size: 22px;
+	background: #dadada;
+	padding: 10px;
+}
+}
+
+
+
+/*workshop_delegates*/
+ @media screen and (max-width:780px) {
+.workshop_delegates .resp-vtabs ul.resp-tabs-list {
+	display: none;
+}
+.workshop_delegates .resp-vtabs .resp-tab-content {
+	width: auto;
+	padding: 0;
+}
+}
+ /*workshop_delegates*/
+ 
+ 
+  /*stall_layout*/
+  @media screen and (max-width:800px) {
+.stall_layout a {
+	    width: 50%;
+		padding: 5px 0;
+		font-size:16px;
+}
+}
+   /*stall_layout*/

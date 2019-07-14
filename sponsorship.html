@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AORA INDIA 2018 | AORA Thiruvananthapuram 2018</title>
+<meta name="description" content="AORA INDIA 2018"><meta name="keywords" content="">
+<meta name="author" content="AORA INDIA 2018">
+
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/style1.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
+<script type="text/javascript" rel="javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" rel="javascript" src="js/jquery.validate.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<!--Banner-->
+<link href="css/nivo-slider.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#slider').nivoSlider();
+});
+</script>
+<link rel="stylesheet" href="assets/slicknav.css">
+<script src="assets/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>
+
+
+<!--Tab--> 
+<script src="js/easy-responsive-tabs.js"></script>
+<link rel="stylesheet" href="css/easy-responsive-tabs.css">
+<script>
+$(document).ready(function () {
+$('#horizontalTab').easyResponsiveTabs({
+type: 'default', //Types: default, vertical, accordion           
+width: 'auto', //auto or any width like 600px
+fit: true,   // 100% fit in a container
+closed: 'accordion', // Start closed if in accordion view
+activate: function(event) { // Callback function if tab is switched
+var $tab = $(this);
+var $info = $('#tabInfo');
+var $name = $('span', $info);
+$name.text($tab.text());
+$info.show();
+}
+});
+$('#verticalTab').easyResponsiveTabs({
+type: 'vertical',
+width: 'auto',
+fit: true
+});
+});
+</script> 
+<!--Tab-->
+
+
+
+<!--Banner-->
+<link href="css/media.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<!--Header-->
+<div class="HeaderBg">
+  <div class="Wrapper">
+    <div class="Header">
+      <div class="HeaderLeft"> <a href="index.html"><img src="images/logo.png"></a> </div>
+      <div class="HeaderCenter">
+        <h2>8<sup>th</sup> National Conference of the Academy of Regional Anaesthesia of India</h2>
+          <p>Date: 10<sup>th</sup>, 11<sup>th</sup> &	 12<sup>th</sup> August 2018</p>
+        <p style="color:#FFA200;"> <strong>Venue : AL SAJ Convention Centre, Thiruvananthapuram, Kerala</strong></p>
+      
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--Header-->
+<!-- Add jQuery library -->
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="js/thumbnailjs/source/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="js/thumbnailjs/source/jquery.fancybox.css" media="screen" />
+<!-- Add Thumbnail helper (this is optional) -->
+<link rel="stylesheet" type="text/css" href="js/thumbnailjs/source/helpers/jquery.fancybox-thumbs-v=2.0.4.css" />
+<script type="text/javascript" src="js/thumbnailjs/source/helpers/jquery.fancybox-thumbs-v=2.0.4.js"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				Simple image gallery. Uses default settings
+			*/
+			
+
+			$('.fancybox').fancybox();
+
+			/*
+				Different effects
+			*/
+
+			// Change title type, overlay opening speed and opacity
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedIn : 500,
+						opacity : 0.95
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background-color' : '#eee'	
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+				Button helper. Disable animations, hide close button, change title type and content
+			*/
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+				Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			*/
+			
+			
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : true,
+				arrows    : true,
+				nextClick : true,
+
+				helpers : { 
+				title	: {
+				type: 'inside'
+			},
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+
+			/*
+				Open manually
+			*/
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50	
+						}
+					}	
+				});
+			});
+
+
+		});
+	</script>
+<style type="text/css">.fancybox-custom .fancybox-outer {
+	box-shadow: 0 0 50px #222;
+}
+</style>
+<!--menu-->
+<div class="MenuBg">
+  <div class="Menu">
+    <ul id="menu">
+      <li> <a href="#">Home</a>
+        <ul>
+        
+        
+        <li> <a href="index.html">Home</a></li>
+          <li> <a href="about.html">AORA THIRUVANANTHAPURAM </a> </li>
+          <li> <a href="about_aora.html">ACADEMY OF REGIONAL ANAESTHESIA (AORA)</a> </li>
+          <li> <a href="journey.html">Journey of AORA</a> </li>
+        </ul>
+      </li>
+      <li> <a href="messages.html">Message</a> 
+        <!--  <ul>
+          <li> <a href="message_chairman.php">Message / National Chairman</a> </li>
+         
+        </ul>--> 
+        
+      </li>
+      <li> <a href="#">Committees</a>
+        <ul>
+          <li> <a href="committee.html">ORGANISING COMMITTEE</a> </li>
+          <li> <a href="national-committee.html">AORA NATIONAL EXECUTIVE COMMITTEE</a> </li>
+        </ul>
+      </li>
+      <li> <a href="#">Faculty</a>
+        <ul>
+          <li> <a href="international_faculty.html">International Faculty</a></li>
+          <li><a href="national_faculty.html">National Faculty </a></li>
+           <li><a href="exclusive_workshop_faculty.html">Exclusive Workshop Faculty</a></li>
+        </ul>
+      </li>
+      <!--<li> <a href="#">Registration</a> 
+        <ul>
+         <li> <a href="registration_details.php">Registration Details</a></li>
+          <li> <a href="registered_delegate.php">Registered Delegates</a> </li>
+          
+        </ul> 
+      </li>-->
+     <!-- <li> <a href="#">Abstracts</a>
+        <ul>
+          <li> <a href="abstract_guidelines.php">Abstract Guideline</a> </li>
+          <li> <a href="submit_abstract.php">Submit an Abstract</a> </li>
+          <li> <a href="selected_abstracts.php">Selected Abstracts</a> </li>
+          <li> <a href="e_poster_podium_template.php">E-poster / Podium Template</a> </li>
+        </ul>
+      </li>-->
+      <li><a href="#">Scientific Program</a>
+        <ul>
+          <li><a href="pdf/day1_scientific_program.pdf" target="_blank">Day 1 Scientific Program</a></li>
+          <li><a href="pdf/day2_scientific_program.pdf" target="_blank">Day 2 Scientific Program</a></li>
+          <li><a href="pdf/day3_workshop.pdf" target="_blank">Day 3 Workshops</a></li>
+          <li><a href="workshop_delegates.html">Workshop Delegates </a></li>
+        </ul>
+      </li>
+      <li class="SonoSite"><a href="sonosite_fellowship-result.html" style="background: #db5de5;">AORA FUJIFILM SonoSite Fellowship-Results</a></li>
+      <li><a href="edra.html">EDRA Exam</a></li>
+      <li><a href="venue.html">Venue</a></li>
+      
+      <li><a href="accommodation.html">Accommodation</a></li>
+      <li><a href="stall_layout.html">Stall Layout</a> </li>
+       
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<!--menu-->
+<div class="clear"></div>
+<div class="InnerBg">
+  <div class="InnerHead bg_color">
+    <h2>Sponsorship Opportunity</h2>
+  </div>
+  <div class="wrapper">
+    <div class="InnerPage">
+      <div class="sponsorship1">
+        <div align="center"> <img src="images/sponsorship.jpg" /></div>
+        
+        <br />
+<div class="sponsor">
+<h2>Rates for Stalls at the Exhibition Area</h2>
+        <table border="0" cellspacing="0" cellpadding="0" width="50%">
+          <tr>
+            <th><strong>TRADE STALL</strong> </th>
+            <th><strong>Stall Charges </strong></th>
+          </tr>
+          <tr>
+            <td>Prime    Stalls </td>
+            <td>INR 3,00,000</td>
+          </tr>
+          <tr>
+            <td>Corner Stalls </td>
+            <td> INR 2,00,000</td>
+          </tr>
+          <tr>
+            <td>Regular Stalls </td>
+            <td>INR 1,00,000</td>
+          </tr>
+        </table>
+        
+        <h3>Special Entitlements for Stall Sponsors</h3>
+        <ul>
+          <li> 3 Meal coupons for lunch on 2 days + 3 banquet passes for August 10, 2018 evening (Prime & Corner Stalls)</li>
+          <li> Branding on stage in Hall I & II (Prime Stalls)</li>
+          <li> 2 Meal coupons for lunch on 2 days + 2 banquet passes for August 10, 2018 evening (Regular Stalls) </li>
+        </ul>
+        <p>We would like to request you to book your stall personally / through your representative at the earliest. The Local Cheque / Demand Draft should be made of the total amount, drawn in favour of AORA INDIA 2018, payable at Thiruvananthapuram, to the conference secretariat.</p>
+        <h3>Minimum List of Material and Services being provided for each stall :</h3>
+        <ul>
+          <li> One Table (4'x2') made of Octanorm system with white laminated top</li>
+          <li> Meal Coupons for Lunch & Banquet Dinner</li>
+          <li> Two folding chairs</li>
+          <li> Three spotlights per stall</li>
+          <li> One power point of 5/15 amps., 220 volts AC / 50 Hz</li>
+          <li> Carpet will be provided for the stall/passage</li>
+          <li> Fascia plate with name of company in uniform capital letters</li>
+          <li> One Dustbin</li>
+        </ul>
+        <p> Detailed floor plan of exhibition area will be updated on the website <a href="index.html" target="_blank">www.aoraindia2018.com</a> shortly.</p>
+        <p>Let us work together to make AORA INDIA 2018 a great success.</p>
+        <br />
+
+        </div>
+        <div class="sponsor">
+        <h2>SUGGESTIVE SPONSORSHIP DETAILS</h2>
+        <table border="0" cellspacing="0" cellpadding="0"  width="95%" align="center" style="margin:auto;">
+          <tr>
+            <th> TYPE OF SPONSORSHIP </th>
+            <th width="25%">SUGGESTIVE AMOUNT</th>
+            <th>ENTITLED</th>
+          </tr>
+          <tr>
+            <td >SPONSORSHIP FOR SCIENTIFIC SESSION IN HALL-A OR HALL-B</td>
+            <td >Rs  1.5 Lakhs</td>
+            <td ><ul>
+                <li>Prominent branding of name and logo at the Scientific Hall with company standees and banners. </li>
+                <li>Branding on  Screens in Hall during session </li>
+              </ul></td>
+          </tr>
+          <tr>
+            <td >DELEGATE  KIT BAG SPONSOR</td>
+            <td >Rs  3 Lakhs</td>
+            <td >Name and Logo will be carried on various conference promotion materials like
+              <ul>
+                <li>Print Advertisements and Conference Website.</li>
+                <li>Name and Logo will be carried on Delegate bag &amp; kit.</li>
+                <li>One complimentary Prime Stall</li>
+              </ul></td>
+          </tr>
+          <tr>
+            <td >SPONSORSHIP OF CONFERENCE SIGNAGES</td>
+            <td >Rs 1.5 Lakhs </td>
+            <td >Branding on the following signages (Except backdrop &amp; podium for the halls)
+              <ul>
+                <li>Publicity panels</li>
+                <li>Welcome panel</li>
+                <li>Direction panels</li>
+              </ul></td>
+          </tr>
+          <tr>
+            <td >CONFERENCE REGISTRATION / DELEGATE BADGES </td>
+            <td >Rs  1.5 Lakhs </td>
+            <td ><ul>
+                <li>All delegate badges allow individual access to conference areas as well as for accreditation and will carry logo of the sponsor.</li>
+              </ul></td>
+          </tr>
+          <tr>
+            <td >LOST &amp; FOUND COUNTER AND CLOAK ROOM&amp; MOBILE CHARGING STATION</td>
+            <td >Rs  1 Lakh</td>
+            <td ><ul>
+                <li>Standee with signage at counter</li>
+              </ul></td>
+          </tr>
+          <tr>
+            <td >SCIENTIFIC PROGRAMME INFORMATION BOOKLET SPONSORSHIP</td>
+            <td >Rs  1 Lakh</td>
+            <td ><ul>
+                <li>The product specific advertisement of the sponsors will be printed on the back cover of the pocket guide.</li>
+              </ul></td>
+          </tr>
+          <tr>
+            <td >INTERNET CAFE : WITH INTERNET CONNECTION TO 4 COMPUTERS </td>
+            <td >Rs  1 Lakh</td>
+            <td ><ul>
+                <li>Standee with signage at counter</li>
+              </ul></td>
+          </tr>
+          <tr>
+            <td >PREVIEW ROOM &amp; FACULTY LOUNGE SPONSORSHIP</td>
+            <td >Rs 1 Lakh</td>
+            <td ><ul>
+                <li>Portable display with the name and logo of the sponsor can be put outside the entrance to the preview room.</li>
+                <li>Inclusion in the list of sponsors</li>
+              </ul></td>
+          </tr>
+        </table>
+        <br />
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="Clear"> </div>
+<div class="FooterBottom">
+  <div class="Wrapper">
+    <div class="FooterBtm1">Copyrights &copy; AORAINDIA 2018</div>
+    <div class="FooterBtm2">Design by <a href="http://krithitechnologies.com/" target="_blank">Krithi</a> </div>
+  </div>
+</div>
+<link rel="stylesheet" href="css/SliderStyle.css" type="text/css" media="screen" />
+<script src="js/jquery.utilcarousel.js"></script> 
+       
+         <script>
+			eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('$(J(){$(\'#I-K\').6({d:\'0\',0:[v,s],e:7,p:q});$(\'#L\').6({d:\'0\',0:[v,H]});$(\'#N-h\').6({d:\'0\',0:[s,G]});$(\'#B\').6({g:7,m:[\'<i c="b-l-a-8"></i>\',\'<i c=" b-o-a-8"></i>\'],f:[[C,5],[n,4],[z,3],[y,2],[x,1]]});$(\'#t-D\').6({k:9,m:[\'<i c="b-l-a-8"></i>\',\'<i c=" b-o-a-8"></i>\'],g:7,j:9});$(\'#t-E\').6({k:9,d:\'0\',0:[M,O],m:[\'<i c="b-l-a-8"></i>\',\'<i c=" b-o-a-8"></i>\'],g:7,j:9});$(\'#u-h\').6({d:\'0\',0:[w,r]});$(\'#u-h-Q\').6({A:5,d:\'0\',0:[w,r],p:q,e:7,k:9});$(\'#W\').6({A:1,f:[[F,1]],e:7});$(\'#V\').6({f:[[X,1],[R,2],[n,3],[S,4],[Y,5]],P:7,j:9});$(\'#T\').6({U:[[n,4],[z,3],[y,2],[x,1]]})});',61,61,'itemWidthRange||||||utilCarousel|true|big|false|open|icon|class|responsiveMode|autoPlay|breakPoints|navigation|showcase||rewind|pagination|left|navigationText|1200|right|interval|3000|210|300|normal|logo|260|200|480|768|992|showItems|navtopbox|1900|imglist|imglist2|1920|360|320|features|function|carousel|simpleImg|100|team|130|mouseWheel|gray|900|1500|portfolio|breakPosints|fullwidth|testimonial1|600|1800'.split('|'),0,{}))
+		</script> 
+        
+        
+        <!--Faculty img scroll-->
+
+</body></html>

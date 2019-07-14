@@ -1,0 +1,2169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AORA INDIA 2018 | AORA Thiruvananthapuram 2018</title>
+<meta name="description" content="AORA INDIA 2018"><meta name="keywords" content="">
+<meta name="author" content="AORA INDIA 2018">
+
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/style1.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
+<script type="text/javascript" rel="javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" rel="javascript" src="js/jquery.validate.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<!--Banner-->
+<link href="css/nivo-slider.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#slider').nivoSlider();
+});
+</script>
+<link rel="stylesheet" href="assets/slicknav.css">
+<script src="assets/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>
+
+
+<!--Tab--> 
+<script src="js/easy-responsive-tabs.js"></script>
+<link rel="stylesheet" href="css/easy-responsive-tabs.css">
+<script>
+$(document).ready(function () {
+$('#horizontalTab').easyResponsiveTabs({
+type: 'default', //Types: default, vertical, accordion           
+width: 'auto', //auto or any width like 600px
+fit: true,   // 100% fit in a container
+closed: 'accordion', // Start closed if in accordion view
+activate: function(event) { // Callback function if tab is switched
+var $tab = $(this);
+var $info = $('#tabInfo');
+var $name = $('span', $info);
+$name.text($tab.text());
+$info.show();
+}
+});
+$('#verticalTab').easyResponsiveTabs({
+type: 'vertical',
+width: 'auto',
+fit: true
+});
+});
+</script> 
+<!--Tab-->
+
+
+
+<!--Banner-->
+<link href="css/media.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<!--Header-->
+<div class="HeaderBg">
+  <div class="Wrapper">
+    <div class="Header">
+      <div class="HeaderLeft"> <a href="index.html"><img src="images/logo.png"></a> </div>
+      <div class="HeaderCenter">
+        <h2>8<sup>th</sup> National Conference of the Academy of Regional Anaesthesia of India</h2>
+          <p>Date: 10<sup>th</sup>, 11<sup>th</sup> &	 12<sup>th</sup> August 2018</p>
+        <p style="color:#FFA200;"> <strong>Venue : AL SAJ Convention Centre, Thiruvananthapuram, Kerala</strong></p>
+      
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--Header-->
+<!-- Add jQuery library -->
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="js/thumbnailjs/source/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="js/thumbnailjs/source/jquery.fancybox.css" media="screen" />
+<!-- Add Thumbnail helper (this is optional) -->
+<link rel="stylesheet" type="text/css" href="js/thumbnailjs/source/helpers/jquery.fancybox-thumbs-v=2.0.4.css" />
+<script type="text/javascript" src="js/thumbnailjs/source/helpers/jquery.fancybox-thumbs-v=2.0.4.js"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				Simple image gallery. Uses default settings
+			*/
+			
+
+			$('.fancybox').fancybox();
+
+			/*
+				Different effects
+			*/
+
+			// Change title type, overlay opening speed and opacity
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedIn : 500,
+						opacity : 0.95
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background-color' : '#eee'	
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+				Button helper. Disable animations, hide close button, change title type and content
+			*/
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+				Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			*/
+			
+			
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : true,
+				arrows    : true,
+				nextClick : true,
+
+				helpers : { 
+				title	: {
+				type: 'inside'
+			},
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+
+			/*
+				Open manually
+			*/
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50	
+						}
+					}	
+				});
+			});
+
+
+		});
+	</script>
+<style type="text/css">.fancybox-custom .fancybox-outer {
+	box-shadow: 0 0 50px #222;
+}
+</style>
+<!--menu-->
+<div class="MenuBg">
+  <div class="Menu">
+    <ul id="menu">
+      <li> <a href="#">Home</a>
+        <ul>
+        
+        
+        <li> <a href="index.html">Home</a></li>
+          <li> <a href="about.html">AORA THIRUVANANTHAPURAM </a> </li>
+          <li> <a href="about_aora.html">ACADEMY OF REGIONAL ANAESTHESIA (AORA)</a> </li>
+          <li> <a href="journey.html">Journey of AORA</a> </li>
+        </ul>
+      </li>
+      <li> <a href="messages.html">Message</a> 
+        <!--  <ul>
+          <li> <a href="message_chairman.php">Message / National Chairman</a> </li>
+         
+        </ul>--> 
+        
+      </li>
+      <li> <a href="#">Committees</a>
+        <ul>
+          <li> <a href="committee.html">ORGANISING COMMITTEE</a> </li>
+          <li> <a href="national-committee.html">AORA NATIONAL EXECUTIVE COMMITTEE</a> </li>
+        </ul>
+      </li>
+      <li> <a href="#">Faculty</a>
+        <ul>
+          <li> <a href="international_faculty.html">International Faculty</a></li>
+          <li><a href="national_faculty.html">National Faculty </a></li>
+           <li><a href="exclusive_workshop_faculty.html">Exclusive Workshop Faculty</a></li>
+        </ul>
+      </li>
+      <!--<li> <a href="#">Registration</a> 
+        <ul>
+         <li> <a href="registration_details.php">Registration Details</a></li>
+          <li> <a href="registered_delegate.php">Registered Delegates</a> </li>
+          
+        </ul> 
+      </li>-->
+     <!-- <li> <a href="#">Abstracts</a>
+        <ul>
+          <li> <a href="abstract_guidelines.php">Abstract Guideline</a> </li>
+          <li> <a href="submit_abstract.php">Submit an Abstract</a> </li>
+          <li> <a href="selected_abstracts.php">Selected Abstracts</a> </li>
+          <li> <a href="e_poster_podium_template.php">E-poster / Podium Template</a> </li>
+        </ul>
+      </li>-->
+      <li><a href="#">Scientific Program</a>
+        <ul>
+          <li><a href="pdf/day1_scientific_program.pdf" target="_blank">Day 1 Scientific Program</a></li>
+          <li><a href="pdf/day2_scientific_program.pdf" target="_blank">Day 2 Scientific Program</a></li>
+          <li><a href="pdf/day3_workshop.pdf" target="_blank">Day 3 Workshops</a></li>
+          <li><a href="workshop_delegates.html">Workshop Delegates </a></li>
+        </ul>
+      </li>
+      <li class="SonoSite"><a href="sonosite_fellowship-result.html" style="background: #db5de5;">AORA FUJIFILM SonoSite Fellowship-Results</a></li>
+      <li><a href="edra.html">EDRA Exam</a></li>
+      <li><a href="venue.html">Venue</a></li>
+      
+      <li><a href="accommodation.html">Accommodation</a></li>
+      <li><a href="stall_layout.html">Stall Layout</a> </li>
+       
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<!--menu-->
+<div class="clear"></div>
+<div class="InnerBg">
+  <div class="InnerHead bg_color">
+    <h2>Workshop Delegates</h2>
+  </div>
+  <div class="wrapper">
+    <div class="InnerPage">
+    
+    
+    <ul class="workshop_details">
+    <li><strong>Date</strong>: 12<sup>th</sup> August 2018</li>
+    <li><strong>Workshop timing</strong> : 8.00 am - 4.30 pm</li>
+    <li><strong>Venue</strong>: Government Medical college, Trivandrum</li>
+    <li>Cloak room facility is available in C. O Karunakaran hall</li>
+    
+    </ul>
+    
+     
+       
+      <div class="workshop_delegates">
+        <div id="verticalTab1">
+          <ul class="resp-tabs-list">
+            <li class="nombore"><span>Workshop 1</span>
+              <div class="slider"></div>
+            </li>
+            <li  class="nombore"> <span>Workshop 2</span>
+              <div class="slider"></div>
+            </li>
+            <li  class="nombore"> <span>Workshop 3</span>
+              <div class="slider"></div>
+            </li>
+            <li  class="nombore"> <span>Workshop 4</span>
+              <div class="slider"></div>
+            </li>
+            <li  class="nombore"> <span>Workshop 5</span>
+              <div class="slider"></div>
+            </li>
+            <li  class="nombore"> <span>Workshop 6</span>
+              <div class="slider"></div>
+            </li>
+          </ul>
+          <div class="resp-tabs-container"> 
+            
+            <!--start-->
+            <div>
+              <div class="work_delegtaes">
+                <table cellspacing="0" cellpadding="0">
+                
+                <tr class="headingbg">
+                    <td colspan="2">Workshop - 1</td>
+                  </tr>
+                  <tr class="work_name">
+                    <td colspan="2">Upper limb + lower limb + truncal blocks <span>Lead faculty - Dr Balavenkat</span>
+                      <p class="venue">Venue: CDC hall -1</p>
+                    </td>
+                  </tr>
+                  <tr class="subheadingbg">
+                    <td width="11%">S. No</td>
+                    <td width="89%">Name</td>
+                  </tr>
+                 <tr>
+ <td>1</td>
+ <td> Jugal Kumar Phukan</td>
+  </tr>
+  <tr>
+ <td>2</td>
+ <td> Rishikesh Ballakur</td>
+  </tr>
+  <tr>
+ <td>3</td>
+ <td> Rajna Tavi</td>
+  </tr>
+  <tr>
+ <td>4</td>
+ <td> Nithin Jayan</td>
+  </tr>
+  <tr>
+ <td>5</td>
+ <td> Dinesh N</td>
+  </tr>
+  <tr>
+ <td>6</td>
+ <td> Vidya Sagar</td>
+  </tr>
+  <tr>
+ <td>7</td>
+ <td> Nimmy Raju</td>
+  </tr>
+  <tr>
+ <td>8</td>
+ <td> Renu Ramakrishnan</td>
+  </tr>
+  <tr>
+ <td>9</td>
+ <td> Uppalapati Bhavana</td>
+  </tr>
+  <tr>
+ <td>10</td>
+ <td> Abdul Azeez</td>
+  </tr>
+  <tr>
+ <td>11</td>
+ <td> Biswajit Bej</td>
+  </tr>
+  <tr>
+ <td>12</td>
+ <td> Anish Mohan</td>
+  </tr>
+  <tr>
+ <td>13</td>
+ <td> Ravindra Singh Chouhan</td>
+  </tr>
+  <tr>
+ <td>14</td>
+ <td> Uma Mandal</td>
+  </tr>
+  <tr>
+ <td>15</td>
+ <td> Deepu C R</td>
+  </tr>
+  <tr>
+ <td>16</td>
+ <td> Madivanan</td>
+  </tr>
+  <tr>
+ <td>17</td>
+ <td> R Sivakumar</td>
+  </tr>
+  <tr>
+ <td>18</td>
+ <td> Sowmya Subramonian</td>
+  </tr>
+  <tr>
+ <td>19</td>
+ <td> Naresh Kumar R</td>
+  </tr>
+  <tr>
+ <td>20</td>
+ <td> K Sampath Kumar</td>
+  </tr>
+  <tr>
+ <td>21</td>
+ <td> Zubia Anjum</td>
+  </tr>
+  <tr>
+ <td>22</td>
+ <td> Sayak Patra</td>
+  </tr>
+  <tr>
+ <td>23</td>
+ <td> Souvik Dey</td>
+  </tr>
+  <tr>
+ <td>24</td>
+ <td> Shalini Halder</td>
+  </tr>
+  <tr>
+ <td></td>
+ <td>Sajna A Kadir</td>
+  </tr>
+  
+  <tr>
+ <td>25</td>
+ <td>Rojo Sebastian</td>
+  </tr>
+  <tr>
+ <td>26</td>
+ <td> Riddhi Roy</td>
+  </tr>
+  <tr>
+ <td>27</td>
+ <td> Shilpa G K Bhat</td>
+  </tr>
+  <tr>
+ <td>28</td>
+ <td> Nithiya Kumar L V</td>
+  </tr>
+  <tr>
+ <td>29</td>
+ <td> Chetan Ashokrao Patil</td>
+  </tr>
+  <tr>
+ <td>30</td>
+ <td> Ashwini B</td>
+  </tr>
+  <tr>
+ <td>31</td>
+ <td> John Santha Vinothan R</td>
+  </tr>
+  <tr>
+ <td>32</td>
+ <td> Shikha Sharma</td>
+  </tr>
+  <tr>
+ <td>33</td>
+ <td> Bilal Ahmed I Kavare</td>
+  </tr>
+  <tr>
+ <td>34</td>
+ <td> Jayarajan P V</td>
+  </tr>
+  <tr>
+ <td>35</td>
+ <td> Dhrutika Rameshbhai Patel</td>
+  </tr>
+  <tr>
+ <td>36</td>
+ <td> Alpeshkumar Hadia</td>
+  </tr>
+  <tr>
+ <td>37</td>
+ <td> Khevna Kapadia</td>
+  </tr>
+  <tr>
+ <td>38</td>
+ <td> Dipti Vora</td>
+  </tr>
+  <tr>
+ <td>39</td>
+ <td> Yuvrajsinh Manharsinh Chauhan</td>
+  </tr>
+  <tr>
+ <td>40</td>
+ <td> Hitexa Sondagar</td>
+  </tr>
+  <tr>
+ <td>41</td>
+ <td> Sanjay Kumar</td>
+  </tr>
+  <tr>
+ <td>42</td>
+ <td> Santhosh Rao</td>
+  </tr>
+  <tr>
+ <td>43</td>
+ <td> Tushar Munnoli</td>
+  </tr>
+  <tr>
+ <td>44</td>
+ <td> Tapas Mandal</td>
+  </tr>
+  <tr>
+ <td>45</td>
+ <td> Pallavi Pai</td>
+  </tr>
+  <tr>
+ <td>46</td>
+ <td> Soumya K R Iyer</td>
+  </tr>
+  <tr>
+ <td>47</td>
+ <td> Dahlia Arancel</td>
+  </tr>
+  <tr>
+ <td>48</td>
+ <td> Vijin Varghese</td>
+  </tr>
+  <tr>
+ <td>49</td>
+ <td> Nupur Gupta</td>
+  </tr>
+  <tr>
+ <td>50</td>
+ <td> Shalini Paramez</td>
+  </tr>
+  <tr>
+ <td>51</td>
+ <td> Pradeep Atter</td>
+  </tr>
+  <tr>
+ <td>52</td>
+ <td> Smita Vikram</td>
+  </tr>
+  <tr>
+ <td>53</td>
+ <td> Priya k</td>
+  </tr>
+  <tr>
+ <td>54</td>
+ <td> Praveen Gupta</td>
+  </tr>
+  <tr>
+ <td>55</td>
+ <td> Senthil Kumar</td>
+  </tr>
+  <tr>
+ <td>56</td>
+ <td> Manjith</td>
+  </tr>
+  <tr>
+ <td>57</td>
+ <td> Muraleedaran</td>
+  </tr>
+  <tr>
+ <td>58</td>
+ <td> Pawan Kumar</td>
+  </tr>
+  <tr>
+ <td>59</td>
+ <td> Jayadeep</td>
+  </tr>
+  <tr>
+ <td>60</td>
+ <td> Aparna K</td>
+  </tr>
+  <tr>
+ <td>61</td>
+ <td> Arunkumar</td>
+  </tr>
+  <tr>
+ <td>62</td>
+ <td> Kiran Kumar</td>
+  </tr>
+  <tr>
+ <td>63</td>
+ <td> Anil Kumar</td>
+  </tr>
+  <tr>
+ <td>64</td>
+ <td> Sandeep S</td>
+  </tr>
+  <tr>
+ <td>65</td>
+ <td> Makaranand</td>
+  </tr>
+  <tr>
+ <td>66</td>
+ <td> Nanna R Chandran</td>
+  </tr>
+  <tr>
+ <td>67</td>
+ <td> Remya Natesh</td>
+  </tr>
+  <tr>
+ <td>68</td>
+ <td> Meghana V S</td>
+  </tr>
+  <tr>
+ <td>69</td>
+ <td> Vishnu Raj</td>
+  </tr>
+  <tr>
+ <td>70</td>
+ <td> Kishore Babu</td>
+  </tr>
+  <tr>
+ <td>71</td>
+ <td> Karthik P</td>
+  </tr>
+  <tr>
+ <td>72</td>
+ <td> Divya Devapal</td>
+  </tr>
+  <tr>
+ <td>73</td>
+ <td>K V mukundan Pillai</td>
+  </tr>
+  <tr>
+ <td>74</td>
+ <td> GVSL Anuradha</td>
+  </tr>
+  <tr>
+ <td>75</td>
+ <td>Dr.Gayathri G</td>
+  </tr>
+  <tr>
+ <td>76</td>
+ <td>Kasiraj</td>
+  </tr>
+  <tr>
+ <td>77</td>
+ <td>Prashant Sirohiya</td>
+  </tr>
+  <tr>
+ <td>78</td>
+ <td>Rajkumari Natani</td>
+  </tr>
+                </table>
+              </div>
+            </div>
+            <!--end--> 
+            
+            <!--start-->
+            <div>
+              <div class="work_delegtaes">
+              
+              
+                <table cellspacing="0" cellpadding="0">
+                
+                 <tr class="headingbg">
+                    <td colspan="2">Workshop - 2</td>
+                  </tr>
+                  <tr class="work_name">
+                    <td colspan="2">Upper limb + lower limb + advanced Lower limb blocks + truncal blocks <span>Lead faculty - Dr TVS Gopal</span>
+                    <p class="venue">Venue : C.O Karunakaran hall - stage</p></td>
+                  </tr>
+                  <tr class="subheadingbg">
+                    <td width="11%">S. No</td>
+                    <td width="89%">Name</td>
+                  </tr>
+                
+                 <tr>
+ <td>1</td>
+ <td> Saurabh Barde</td>
+ </tr>
+ <tr>
+ <td>2</td>
+ <td> Keerthi Sri</td>
+ </tr>
+ <tr>
+ <td>3</td>
+ <td> Rhituparna Baksi</td>
+ </tr>
+ <tr>
+ <td>4</td>
+ <td> Ankaj Rouf</td>
+ </tr>
+ <tr>
+ <td>5</td>
+ <td> Janmejoy Sengupta</td>
+ </tr>
+ <tr>
+ <td>6</td>
+ <td> Shilpa S</td>
+ </tr>
+ <tr>
+ <td>7</td>
+ <td> Geetha Bhavani Gullipalli</td>
+ </tr>
+ <tr>
+ <td>8</td>
+ <td> Arul Prakasham P M</td>
+ </tr>
+ <tr>
+ <td>9</td>
+ <td> Susmita Bhattacharya</td>
+ </tr>
+ <tr>
+ <td>10</td>
+ <td>  Valmik Avhad</td>
+ </tr>
+ <tr>
+ <td>11</td>
+ <td>  Senthilkumar B</td>
+ </tr>
+ <tr>
+ <td>12</td>
+ <td>  Anjana Menon</td>
+ </tr>
+ <tr>
+ <td>13</td>
+ <td>  Subhasish Patnaik</td>
+ </tr>
+ <tr>
+ <td>14</td>
+ <td> Mami Parija</td>
+ </tr>
+ <tr>
+ <td>15</td>
+ <td>  Vinitha R</td>
+ </tr>
+ <tr>
+ <td>16</td>
+ <td>  Vinothkumar</td>
+ </tr>
+ <tr>
+ <td>17</td>
+ <td>  Ramya Deepika</td>
+ </tr>
+ <tr>
+ <td>18</td>
+ <td>  Tuhin Mistry</td>
+ </tr>
+ <tr>
+ <td>19</td>
+ <td>  Prasanthi Y</td>
+ </tr>
+ <tr>
+ <td>20</td>
+ <td>  Hari Kumar C K</td>
+ </tr>
+ <tr>
+ <td>21</td>
+ <td>  Hardik Patel</td>
+ </tr>
+ <tr>
+ <td>22</td>
+ <td>  Laji Abraham Samuel</td>
+ </tr>
+ <tr>
+ <td>23</td>
+ <td>  Avinash Sharma</td>
+ </tr>
+ <tr>
+ <td>24</td>
+ <td>  Mona Swain</td>
+ </tr>
+ <tr>
+ <td>25</td>
+ <td>  Asha Shiny Titus</td>
+ </tr>
+ <tr>
+ <td>26</td>
+ <td>  Amritha Balaji</td>
+ </tr>
+ <tr>
+ <td>27</td>
+ <td>  Shankar Anand R</td>
+ </tr>
+ <tr>
+ <td>28</td>
+ <td>  Seema Paul</td>
+ </tr>
+ <tr>
+ <td>29</td>
+ <td>  Suryansh Pandey</td>
+ </tr>
+ <tr>
+ <td>30</td>
+ <td>  Azka Zuberi</td>
+ </tr>
+ <tr>
+ <td>31</td>
+ <td> Anjali Pingle</td>
+ </tr>
+ <tr>
+ <td>32</td>
+ <td>  Reena Parampill</td>
+ </tr>
+ <tr>
+ <td>33</td>
+ <td>  Saranya Ramaswami</td>
+ </tr>
+ <tr>
+ <td>34</td>
+ <td> Chandraleka M</td>
+ </tr>
+ <tr>
+ <td>35</td>
+ <td>  Sivakumar</td>
+ </tr>
+ <tr>
+ <td>36</td>
+ <td>  Harikrishna Gulipalli</td>
+ </tr>
+ <tr>
+ <td>37</td>
+ <td>  Dinesh Babu Dhamodharan</td>
+ </tr>
+ <tr>
+ <td>38</td>
+ <td>  Balasubramanian Shanmugam</td>
+ </tr>
+ <tr>
+ <td>39</td>
+ <td>  Saravanan</td>
+ </tr>
+ <tr>
+ <td>40</td>
+ <td>  Amiya Mishra</td>
+ </tr>
+ <tr>
+ <td>41</td>
+ <td>  Sahir Aftab</td>
+ </tr>
+ <tr>
+ <td>42</td>
+ <td>  A M Vignesh</td>
+ </tr>
+ <tr>
+ <td>43</td>
+ <td> Mod Yadav</td>
+ </tr>
+ <tr>
+ <td>44</td>
+ <td> Krupa Mulgaonkar</td>
+ </tr>
+ <tr>
+ <td>45</td>
+ <td> Kumar B G</td>
+ </tr>
+ <tr>
+ <td>46</td>
+ <td> Pooja Narendrabhai Vyas</td>
+ </tr>
+ <tr>
+ <td>47</td>
+ <td>  Bhajikhau Kruti Mukesh Kumar</td>
+ </tr>
+ <tr>
+ <td>48</td>
+ <td> Yadhu Dev</td>
+ </tr>
+ <tr>
+ <td>49</td>
+ <td> Gopakumar A K</td>
+ </tr>
+ <tr>
+ <td>50</td>
+ <td>  Priyanka</td>
+ </tr>
+ <tr>
+ <td>51</td>
+ <td>  Bagee Lakshmi</td>
+ </tr>
+ <tr>
+ <td>52</td>
+ <td>  Sreenivasulu</td>
+ </tr>
+ <tr>
+ <td>53</td>
+ <td> Rahul Chalekar</td>
+ </tr>
+ <tr>
+ <td>54</td>
+ <td>  Santhini Jayapal</td>
+ </tr>
+ <tr>
+ <td>55</td>
+ <td>  Avinosh V</td>
+ </tr>
+ <tr>
+ <td>56</td>
+ <td> Basupathi Natarajan</td>
+ </tr>
+ <tr>
+ <td>57</td>
+ <td>  Kammu Ganesh</td>
+ </tr>
+ <tr>
+ <td>58</td>
+ <td>  Rajasree Sajan</td>
+ </tr>
+ <tr>
+ <td>59</td>
+ <td>  Aswathy Vijay</td>
+ </tr>
+ <tr>
+ <td>60</td>
+ <td>  Keerthiga Mohan</td>
+ </tr>
+ <tr>
+ <td>61</td>
+ <td> Sai Sathya</td>
+ </tr>
+ <tr>
+ <td>62</td>
+ <td>  Meenu M S</td>
+ </tr>
+ <tr>
+ <td>63</td>
+ <td>  Amruta Tilwa</td>
+ </tr>
+ <tr>
+ <td>64</td>
+ <td> Rajendra pandhare</td>
+ </tr>
+ <tr>
+ <td>65</td>
+ <td> Anju sangeeth</td>
+ </tr>
+ <tr>
+ <td>66</td>
+ <td> John george</td>
+ </tr>
+ <tr>
+ <td>67</td>
+ <td> Jomy thomas</td>
+ </tr>
+ <tr>
+ <td>68</td>
+ <td> Deepan C</td>
+ </tr>
+ <tr>
+ <td>69</td>
+ <td>Ravikanth</td>
+ </tr>
+ <tr>
+ <td>70</td>
+ <td>  Yathish V</td>
+ </tr>
+ <tr>
+ <td>71</td>
+ <td>Amal S prasad</td>
+ </tr>
+ <tr>
+ <td>72</td>
+ <td>Bini S. V</td>
+ </tr>
+ <tr>
+ <td>73</td>
+ <td>Richa Shah</td>
+ </tr>
+ <tr>
+ <td>74</td>
+ <td>R Shankar</td>
+ </tr>
+                </table>
+              </div>
+            </div>
+            <!--end--> 
+            
+            <!--start-->
+            <div>
+              <div class="work_delegtaes">
+                <table cellspacing="0" cellpadding="0">
+                
+                 <tr class="headingbg">
+                    <td colspan="2">Workshop - 3</td>
+                  </tr>
+                  <tr class="work_name">
+                    <td colspan="2">Upper limb + lower limb + advanced Lower limb blocks + FAST scan <span>Lead faculty - Dr Sandeep Diwan</span>
+                      <p class="venue">Venue : C. O Karunakaran hall - floor</p></td>
+                  </tr>
+                  <tr class="subheadingbg">
+                    <td width="11%">S. No</td>
+                    <td width="89%">Name</td>
+                  </tr>
+                
+                  <tr>
+  <td>1</td>
+  <td> Krishnagopal Vinod</td>
+  </tr>
+  <tr>
+  <td>2</td>
+  <td>  Nanda Kumar S V</td>
+  </tr>
+  <tr>
+  <td>3</td>
+  <td>  Jesto Kurian</td>
+  </tr>
+  <tr>
+  <td>4</td>
+  <td>  Rohan Bhatia</td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td>  Senthilkumar B</td>
+  </tr>
+  <tr>
+  <td>6</td>
+  <td>  Suresh Seelam</td>
+  </tr>
+  <tr>
+  <td>7</td>
+  <td> Beula G</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td>  Narasimhan M K</td>
+  </tr>
+  <tr>
+  <td>9</td>
+  <td> Navaneetha Krishnan S</td>
+  </tr>
+  <tr>
+  <td>10</td>
+  <td>  Riji  V S</td>
+  </tr>
+  <tr>
+  <td>11</td>
+  <td> Souvic  Sarkar</td>
+  </tr>
+  <tr>
+  <td>12</td>
+  <td> Himanshu  Prabhudayal Nandwani</td>
+  </tr>
+  <tr>
+  <td>13</td>
+  <td> Junaid  Bin Ahmed</td>
+  </tr>
+  <tr>
+  <td>14</td>
+  <td> Abhijith  Kumar</td>
+  </tr>
+  <tr>
+  <td>15</td>
+  <td>  Sandip  Das</td>
+  </tr>
+  <tr>
+  <td>16</td>
+  <td>  Rishav  Kakati</td>
+  </tr>
+  <tr>
+  <td>17</td>
+  <td>  Rithuprna  Baksh</td>
+  </tr>
+  <tr>
+  <td>18</td>
+  <td>  Ravi  Kishore</td>
+  </tr>
+  <tr>
+  <td>19</td>
+  <td> Jennyl  Maclean</td>
+  </tr>
+  <tr>
+  <td>20</td>
+  <td>  Rajasekhar</td>
+  </tr>
+  <tr>
+  <td>21</td>
+  <td> Vijayan</td>
+  </tr>
+  <tr>
+  <td>22</td>
+  <td> Ravindra  Bhat R</td>
+  </tr>
+  <tr>
+  <td>23</td>
+  <td>  Pratheeba  N</td>
+  </tr>
+  <tr>
+  <td>24</td>
+  <td>  Nagalekshmi  P</td>
+  </tr>
+  <tr>
+  <td>25</td>
+  <td> Remadevi  R</td>
+  </tr>
+  <tr>
+  <td>26</td>
+  <td>  Prasanth  S</td>
+  </tr>
+  <tr>
+  <td>27</td>
+  <td> Nadia  Rafeeque</td>
+  </tr>
+  <tr>
+  <td>28</td>
+  <td>  Subha  R</td>
+  </tr>
+  <tr>
+  <td>29</td>
+  <td>  Sudha  Padmam</td>
+  </tr>
+  <tr>
+  <td>30</td>
+  <td>  Suma  R</td>
+  </tr>
+  <tr>
+  <td>31</td>
+  <td> Biswas</td>
+  </tr>
+  <tr>
+  <td>32</td>
+  <td>  Hameem</td>
+  </tr>
+  <tr>
+  <td>33</td>
+  <td>  Deepthi  J Prabhu</td>
+  </tr>
+  <tr>
+  <td>34</td>
+  <td> Vaishali</td>
+  </tr>
+  <tr>
+  <td>35</td>
+  <td> Kruthika</td>
+  </tr>
+  <tr>
+  <td>36</td>
+  <td> Shabila</td>
+  </tr>
+  <tr>
+  <td>37</td>
+  <td> G  Ram Mohan</td>
+  </tr>
+  <tr>
+  <td>38</td>
+  <td> Satheesh  Pillappan</td>
+  </tr>
+  <tr>
+  <td>39</td>
+  <td> Pramoth</td>
+  </tr>
+  <tr>
+  <td>40</td>
+  <td> Vaishali  Vasantrao Waindeskar</td>
+  </tr>
+  <tr>
+  <td>41</td>
+  <td> Allen  Thomas</td>
+  </tr>
+  <tr>
+  <td>42</td>
+  <td> Roshan  Radhakrishnan</td>
+  </tr>
+  <tr>
+  <td>43</td>
+  <td> Poornima  Kasthuri</td>
+  </tr>
+  <tr>
+  <td>44</td>
+  <td>Unnikrishna  Varma Kerala Varma</td>
+  </tr>
+  <tr>
+  <td>45</td>
+  <td>  Keerthy</td>
+  </tr>
+  <tr>
+  <td>46</td>
+  <td> Harish  B G</td>
+  </tr>
+  <tr>
+  <td>47</td>
+  <td>  Nishu  Athul</td>
+  </tr>
+  <tr>
+  <td>48</td>
+  <td> Divya  John</td>
+  </tr>
+  <tr>
+  <td>49</td>
+  <td>  Basheer</td>
+  </tr>
+  <tr>
+  <td>50</td>
+  <td>  Akhil  S</td>
+  </tr>
+  <tr>
+  <td>51</td>
+  <td>  Vineeth</td>
+  </tr>
+  <tr>
+  <td>52</td>
+  <td>  Bittu  Susan</td>
+  </tr>
+  <tr>
+  <td>53</td>
+  <td> Midu  V Nadh</td>
+  </tr>
+  <tr>
+  <td>54</td>
+  <td>  Aswathy  Sidharthan</td>
+  </tr>
+  <tr>
+  <td>55</td>
+  <td>  Sujita  Chaudhary</td>
+  </tr>
+  <tr>
+  <td>56</td>
+  <td>  Sasidharan</td>
+  </tr>
+  <tr>
+  <td>57</td>
+  <td>Rajeev  S</td>
+  </tr>
+  <tr>
+  <td>58</td>
+  <td>  Manimaran  Rajendran</td>
+  </tr>
+  <tr>
+  <td>59</td>
+  <td>  Pathade  Rameshwar Babanrao</td>
+  </tr>
+  <tr>
+  <td>60</td>
+  <td>  Dinesh  G</td>
+  </tr>
+  <tr>
+  <td>61</td>
+  <td>  Upasana  Naskar</td>
+  </tr>
+  <tr>
+  <td>62</td>
+  <td> Subrat  Dam</td>
+  </tr>
+  <tr>
+  <td>63</td>
+  <td> Jeslin  Lekshmanan</td>
+  </tr>
+  <tr>
+  <td>64</td>
+  <td> Jayashree K M</td>
+  </tr>
+  <tr>
+  <td>65</td>
+  <td> Valsamma  Abraham</td>
+  </tr>
+  <tr>
+  <td>66</td>
+  <td>  Astha Kanaparthi</td>
+  </tr>
+  <tr>
+  <td>67</td>
+  <td> Aswani Narayanan</td>
+  </tr>
+  <tr>
+  <td>68</td>
+  <td>Dr. Dhanya M R</td>
+  </tr>
+  <tr>
+  <td>69</td>
+
+  <td>Reshmy Thomas</td>
+  </tr>
+  <tr>
+  <td>70</td>
+  <td>Belty Sebastian</td>
+  </tr>
+                </table>
+              </div>
+            </div>
+            <!--end--> 
+            
+            <!--start-->
+            <div>
+              <div class="work_delegtaes">
+                <table cellspacing="0" cellpadding="0">
+                
+                 <tr class="headingbg">
+                    <td colspan="2">Workshop - 4 </td>
+                  </tr>
+                  <tr class="work_name">
+                    <td colspan="2">Advanced Blocks<span>Lead faculty - Dr Deep Arora</span>
+                    <p class="venue">Venue : College of pharmacology hall</p></td>
+                  </tr>
+                  <tr class="subheadingbg">
+                    <td width="11%">S. No</td>
+                    <td width="89%">Name</td>
+                  </tr>
+                
+                  <tr>
+ <td>1</td>
+ <td>    Mohammed Abdul Nazar E K</td>
+  </tr>
+  <tr>
+ <td>2</td>
+ <td>  Madhusoodan Chittapur Jagirdar</td>
+  </tr>
+  <tr>
+ <td>3</td>
+ <td>  Ajay Shandilya</td>
+  </tr>
+  <tr>
+ <td>4</td>
+ <td> Archana B N</td>
+  </tr>
+  <tr>
+ <td>5</td>
+ <td>  Varun Kumar Gupta</td>
+  </tr>
+  <tr>
+ <td>6</td>
+ <td>   Santhoshkumar</td>
+  </tr>
+  <tr>
+ <td>7</td>
+ <td>   Lokesh B Chinchkhede</td>
+  </tr>
+  <tr>
+ <td>8</td>
+ <td>   Rehena Parvin</td>
+  </tr>
+  <tr>
+ <td>9</td>
+ <td>   Kadambini Parida</td>
+  </tr>
+  <tr>
+ <td>10</td>
+ <td>  Arunangshu Chakraborty</td>
+  </tr>
+  <tr>
+ <td>11</td>
+ <td>  Mustafizur Rahman</td>
+  </tr>
+  <tr>
+ <td>12</td>
+ <td>   Aamuktha Malyadha Ramidi</td>
+  </tr>
+  <tr>
+ <td>13</td>
+ <td>   Latheef</td>
+  </tr>
+  <tr>
+ <td>14</td>
+ <td>   Ravindra Wankhede</td>
+  </tr>
+  <tr>
+ <td>15</td>
+ <td>  Surupa Deviprada</td>
+  </tr>
+  <tr>
+ <td>16</td>
+ <td>  Pradeep Tiwari</td>
+  </tr>
+  <tr>
+ <td>17</td>
+ <td>   Suvarna K</td>
+  </tr>
+  <tr>
+ <td>18</td>
+ <td>   Vasantha O T</td>
+  </tr>
+  <tr>
+ <td>19</td>
+ <td> Tulsidas Mange</td>
+  </tr>
+  <tr>
+ <td>20</td>
+ <td>  Nithiyanatham</td>
+  </tr>
+  <tr>
+ <td>21</td>
+ <td>  Nithy Rajan</td>
+  </tr>
+  <tr>
+ <td>22</td>
+ <td>  Karthik Babu</td>
+  </tr>
+  <tr>
+ <td>23</td>
+ <td> Shreya Das Adhikari</td>
+  </tr>
+  <tr>
+ <td>24</td>
+ <td>  Nandini Dwarakanath</td>
+  </tr>
+  <tr>
+ <td>25</td>
+ <td>   Devakinandan Yerra</td>
+  </tr>
+  <tr>
+ <td>26</td>
+ <td> Shreecharan P K</td>
+  </tr>
+  <tr>
+ <td>27</td>
+ <td>  Pavani Indurthi</td>
+  </tr>
+  <tr>
+ <td>28</td>
+ <td>   Mahendran</td>
+  </tr>
+  <tr>
+ <td>29</td>
+ <td>   Bharati Adhya</td>
+  </tr>
+  <tr>
+ <td>30</td>
+ <td>   T A Arivumani</td>
+  </tr>
+  <tr>
+ <td>31</td>
+ <td>   Jothi Murugan G</td>
+  </tr>
+  <tr>
+ <td>32</td>
+ <td>  Juhi Baktavar</td>
+  </tr>
+  <tr>
+ <td>33</td>
+ <td>  Nimmy George</td>
+  </tr>
+  <tr>
+ <td>34</td>
+ <td> Neetha Jose</td>
+  </tr>
+  <tr>
+ <td>35</td>
+ <td>   Nikhil MP</td>
+  </tr>
+  <tr>
+ <td>36</td>
+ <td>   Salman Mohamed</td>
+  </tr>
+  <tr>
+ <td>37</td>
+ <td>  Arsha ashok</td>
+  </tr>
+  <tr>
+ <td>38</td>
+ <td>   Anju mathew</td>
+  </tr>
+  <tr>
+ <td>40</td>
+ <td>  Pavan kumar</td>
+  </tr>
+  <tr>
+ <td>41</td>
+ <td>   Lakshmy</td>
+  </tr>
+  <tr>
+ <td>42</td>
+ <td>   Dhanya radha</td>
+  </tr>
+  <tr>
+ <td>43</td>
+ <td>   Nisha</td>
+  </tr>
+  <tr>
+ <td>44</td>
+ <td>  Diliphan</td>
+  </tr>
+  <tr>
+ <td>45</td>
+ <td>   Manjo Kumar</td>
+  </tr>
+  <tr>
+ <td>46</td>
+ <td>   Sindhu A</td>
+  </tr>
+  <tr>
+ <td>47</td>
+ <td>  Prashanthi</td>
+  </tr>
+  <tr>
+ <td>48</td>
+ <td>   Satish chander</td>
+  </tr>
+  <tr>
+ <td>49</td>
+ <td>   Vijay Kumar</td>
+  </tr>
+  <tr>
+ <td>50</td>
+ <td>   Sun Joy Verma</td>
+  </tr>
+  <tr>
+ <td>51</td>
+ <td> Silvy Varghese</td>
+  </tr>
+  <tr>
+ <td>52</td>
+ <td>   Rekha Varghese</td>
+  </tr>
+  <tr>
+ <td>53</td>
+ <td>  Renjith Ravi</td>
+  </tr>
+  <tr>
+ <td>54</td>
+ <td>   Mallika balakrishnan</td>
+  </tr>
+  <tr>
+ <td>55</td>
+ <td>  Sankarasubramanian</td>
+  </tr>
+  <tr>
+ <td>56</td>
+ <td>   Salini Ramakrishnan</td>
+  </tr>
+  <tr>
+ <td>57</td>
+ <td>  Smita Prashant</td>
+  </tr>
+  <tr>
+ <td>58</td>
+ <td> Aril Abraham</td>
+  </tr>
+  <tr>
+ <td>59</td>
+ <td> Deepa Mirium Varghese</td>
+  </tr>
+  <tr>
+ <td>60</td>
+ <td> Suresh J</td>
+  </tr>
+  <tr>
+ <td>61</td>
+ <td>  Anoop Kumar</td>
+  </tr>
+  <tr>
+ <td>62</td>
+ <td> Lakshmikanth</td>
+  </tr>
+  <tr>
+ <td>62</td>
+ <td>Dr. Nishkarsh gupta</td>
+  </tr>
+  <tr>
+ <td>63</td>
+ <td>Dr. Arindam Choudhery</td>
+  </tr>
+  <tr>
+ <td>64</td>
+ <td>Dr. Siddarth Kalia</td>
+  </tr>
+  <tr>
+ <td>65</td>
+ <td>Kavita Verma</td>
+  </tr>
+  <tr>
+ <td>66</td>
+ <td>Rishika</td>
+  </tr>
+  <tr>
+ <td>67</td>
+ <td>Dr. Paul O Raphel</td>
+  </tr>
+  <tr>
+ <td>68</td>
+ <td>Kamakshmi</td>
+  </tr>
+  <tr>
+ <td>69</td>
+ <td>Radhika Nair</td>
+  </tr>
+  <tr>
+ <td>70</td>
+ <td>Dr. Rajni Pradhan Sajan</td>
+  </tr>
+  <tr>
+ <td>71</td>
+ <td>Prerna Nijhawan</td>
+  </tr>
+                </table>
+              </div>
+            </div>
+            <!--end--> 
+            
+            <!--start-->
+            <div>
+              <div class="work_delegtaes">
+                <table cellspacing="0" cellpadding="0">
+                
+                  <tr class="headingbg">
+                    <td colspan="2">Workshop - 5</td>
+                  </tr>
+                  <tr class="work_name">
+                    <td colspan="2"> Upper limb + lower limb + paediatric simulation <span>Lead faculty- Dr Vrushali Ponde</span>
+<p class="venue">Venue : CDC hall - 2</p></td>
+                  </tr>
+                  <tr class="subheadingbg">
+                    <td width="11%">S. No</td>
+                    <td width="89%">Name</td>
+                  </tr>
+                
+                
+                <tr>
+ <td>1</td>
+ <td> Joseph Abraham Poonuraparampil</td>
+ </tr>
+ <tr>
+ <td>2</td>
+ <td>Gowthaman TB</td>
+ </tr>
+ <tr>
+ <td>3</td>
+ <td>Syed Faroq Ali</td>
+ </tr>
+ <tr>
+ <td>4</td>
+ <td>Rushikesh Desai</td>
+ </tr>
+ <tr>
+ <td>5</td>
+ <td> Debarpita Saha</td>
+ </tr>
+ <tr>
+ <td>6</td>
+ <td>Anjana R</td>
+ </tr>
+ <tr>
+ <td>7</td>
+ <td> Manu Sam Mathew</td>
+ </tr>
+ <tr>
+ <td>8</td>
+ <td>Nimeeliya Zabrin</td>
+ </tr>
+ <tr>
+ <td>9</td>
+ <td>Sunit Gupta</td>
+ </tr>
+ <tr>
+ <td>10</td>
+ <td>Sabah Rahman</td>
+ </tr>
+ <tr>
+ <td>11</td>
+ <td> Shruti Patil</td>
+ </tr>
+ <tr>
+ <td>12</td>
+ <td> Kriti Puri</td>
+ </tr>
+ <tr>
+ <td>13</td>
+ <td>Prashanth R P</td>
+ </tr>
+ <tr>
+ <td>14</td>
+ <td>Nandish</td>
+ </tr>
+ <tr>
+ <td>15</td>
+ <td> Lipika Soni</td>
+ </tr>
+ <tr>
+ <td>16</td>
+ <td> Anu Nitheesh</td>
+ </tr>
+ <tr>
+ <td>17</td>
+ <td> Neha</td>
+ </tr>
+ <tr>
+ <td>18</td>
+ <td> Sahithya Sriman</td>
+ </tr>
+ <tr>
+ <td>19</td>
+ <td> Saveena</td>
+ </tr>
+ <tr>
+ <td>20</td>
+ <td> Rajat</td>
+ </tr>
+ <tr>
+ <td>25</td>
+ <td> Bhavana swasthi</td>
+ </tr>
+ <tr>
+ <td>26</td>
+ <td> Subramaniam </td>
+ </tr>
+ <tr>
+ <td>27</td>
+ <td>Vipin M C</td>
+ </tr>
+ <tr>
+ <td>28</td>
+ <td> Akhil L</td>
+ </tr>
+ <tr>
+ <td>29</td>
+ <td> Vidhya R Vijayan</td>
+ </tr>
+ <tr>
+ <td>30</td>
+ <td> Anoop P S</td>
+ </tr>
+ <tr>
+ <td>31</td>
+ <td> Jacob Pavothikunnel </td>
+ </tr>
+ <tr>
+ <td>32</td>
+ <td> Rajiv Gandhi</td>
+ </tr>
+ <tr>
+ <td>33</td>
+ <td> Jiney George </td>
+ </tr>
+ <tr>
+ <td>34</td>
+ <td> Rajendra Bhatnagar</td>
+ </tr>
+ <tr>
+ <td>35</td>
+ <td> Shelly Mittal</td>
+ </tr>
+ <tr>
+ <td>36</td>
+ <td> Swathi Aggarwal</td>
+ </tr>
+ <tr>
+ <td>37</td>
+ <td> Syed Shujauddin</td>
+ </tr>
+ <tr>
+ <td>38</td>
+ <td> Debesh Bhoi</td>
+ </tr>
+ <tr>
+ <td>39</td>
+ <td> Rajashree Paul</td>
+ </tr>
+ <tr>
+ <td>40</td>
+ <td> Sashmita Kumari</td>
+ </tr>
+ <tr>
+ <td>41</td>
+ <td>Soniya Biswas</td>
+ </tr>
+ <tr>
+ <td>42</td>
+ <td>Dr. Geeta Kamal</td>
+ </tr>
+ <tr>
+ <td>43</td>
+ <td>Urvin N Mehta</td>
+ </tr>
+ <tr>
+ <td>44</td>
+ <td>Subha C P</td>
+ </tr>
+ <tr>
+ <td>45</td>
+ <td>Vandana Mangal</td>
+ </tr>
+                </table>
+              </div>
+            </div>
+            <!--end--> 
+            
+            <!--start-->
+            <div>
+              <div class="work_delegtaes">
+                <table cellspacing="0" cellpadding="0">
+                <tr class="headingbg">
+                    <td colspan="2">Workshop - 6</td>
+                  </tr>
+                  <tr class="work_name">
+                    <td colspan="2"> Upper limb + lower limb + truncal blocks. <span>Lead faculty - Dr Ram Kumar</span>
+                    <p class="venue">Venue: Clinical epidemiology hall (principal’s office block)</p></td>
+                  </tr>
+                  <tr class="subheadingbg">
+                    <td width="11%">S. No</td>
+                    <td width="89%">Name</td>
+                  </tr>
+                
+                 <tr>
+ <td>1</td>
+ <td> Seema Samuel Waidande</td>
+ </tr>
+ <tr>
+ <td>2</td>
+ <td> Sonia M Lal</td>
+ </tr>
+ <tr>
+ <td>3</td>
+ <td> Anita Mathew</td>
+ </tr>
+ <tr>
+ <td>4</td>
+ <td> Dhavalkumar C Patel</td>
+ </tr>
+ <tr>
+ <td>5</td>
+ <td> Shripad Ajitprasad Mahadik</td>
+ </tr>
+ <tr>
+ <td>6</td>
+ <td> Meera S Babu</td>
+ </tr>
+ <tr>
+ <td>7</td>
+ <td> Manju B</td>
+ </tr>
+ <tr>
+ <td>8</td>
+ <td> Shashank Rane</td>
+ </tr>
+ <tr>
+ <td>9</td>
+ <td> Sanjana Vinod</td>
+ </tr>
+ <tr>
+ <td>10</td>
+ <td> Ananth Srikrishna Somayaji</td>
+ </tr>
+ <tr>
+ <td>11</td>
+ <td> Shoba Philip</td>
+ </tr>
+ <tr>
+ <td>12</td>
+ <td> Anu Paul</td>
+ </tr>
+ <tr>
+ <td>13</td>
+ <td> Saheer P</td>
+ </tr>
+ <tr>
+ <td>14</td>
+ <td> Karthikeyan Murugesan</td>
+ </tr>
+ <tr>
+ <td>15</td>
+ <td> Ramineedi Azaresh</td>
+ </tr>
+ <tr>
+ <td>16</td>
+ <td> Bhavana Mohan</td>
+ </tr>
+ <tr>
+ <td>17</td>
+ <td> Sethulakshmi Prasad</td>
+ </tr>
+ <tr>
+ <td>18</td>
+ <td> Brijesh Savidhan</td>
+ </tr>
+ <tr>
+ <td>19</td>
+ <td> Moona Abdul Kadiru</td>
+ </tr>
+ <tr>
+ <td>20</td>
+ <td> Vandana Viswanathan</td>
+ </tr>
+ <tr>
+ <td>21</td>
+ <td> Amritha Vijayan</td>
+ </tr>
+ <tr>
+ <td>22</td>
+ <td> Keerthi Premchandran</td>
+ </tr>
+ <tr>
+ <td>23</td>
+ <td> Sajina M</td>
+ </tr>
+ <tr>
+ <td>24</td>
+ <td> Kumary Vally</td>
+ </tr>
+ <tr>
+ <td>25</td>
+ <td> Hariprasad</td>
+ </tr>
+ <tr>
+ <td>26</td>
+ <td> Anandakumar</td>
+ </tr>
+ <tr>
+ <td>27</td>
+ <td> S Nishal Perumal</td>
+ </tr>
+ <tr>
+ <td>28</td>
+ <td> Geo Navin Jude</td>
+ </tr>
+ <tr>
+ <td>29</td>
+ <td> Kingslin Selvakumar</td>
+ </tr>
+ <tr>
+ <td>30</td>
+ <td> Ivan Koshy</td>
+ </tr>
+ <tr>
+ <td>31</td>
+ <td> Balaji Ramaswamy</td>
+ </tr>
+ <tr>
+ <td>32</td>
+ <td> Sachin Revansidha Swami</td>
+ </tr>
+ <tr>
+ <td>33</td>
+ <td> Susan Suku Ninan</td>
+ </tr>
+ <tr>
+ <td>34</td>
+ <td> Unnikrishnan C P</td>
+ </tr>
+ <tr>
+ <td>35</td>
+ <td> Divya V Gladston</td>
+ </tr>
+ <tr>
+ <td>36</td>
+ <td> Joice Jacob</td>
+ </tr>
+ <tr>
+ <td>37</td>
+ <td> Anila Basheer</td>
+ </tr>
+ <tr>
+ <td>38</td>
+ <td>Gayathri S R</td>
+ </tr>
+ <tr>
+ <td>39</td>
+ <td> Mounisha E</td>
+ </tr>
+ <tr>
+ <td>40</td>
+ <td> Prem Anand</td>
+ </tr>
+ <tr>
+ <td>41</td>
+ <td> Melbin Baby</td>
+ </tr>
+ <tr>
+ <td>42</td>
+ <td> Suchita Ankolikar</td>
+ </tr>
+ <tr>
+ <td>43</td>
+ <td> Vipin Goel</td>
+ </tr>
+ <tr>
+ <td>44</td>
+ <td> Cherry J B Kharbudnah</td>
+ </tr>
+ <tr>
+ <td>45</td>
+ <td> Vinay Babu Kurien</td>
+ </tr>
+ <tr>
+ <td>46</td>
+ <td> Souharda Karki</td>
+ </tr>
+ <tr>
+ <td>47</td>
+ <td> Ragesh I R</td>
+ </tr>
+ <tr>
+ <td>48</td>
+ <td> Abhijeet Patil</td>
+ </tr>
+ <tr>
+ <td>49</td>
+ <td> Uma Mandal</td>
+ </tr>
+ <tr>
+ <td>50</td>
+ <td> Bharath Kumar</td>
+ </tr>
+ <tr>
+ <td>51</td>
+ <td> Boban Abhraham</td>
+ </tr>
+ <tr>
+ <td>52</td>
+ <td> Astha Agarwal</td>
+ </tr>
+ <tr>
+ <td>53</td>
+ <td> Jayant harne</td>
+ </tr>
+ <tr>
+ <td>54</td>
+ <td> Pankaj</td>
+ </tr>
+ <tr>
+ <td>55</td>
+ <td> Felix Nelson</td>
+ </tr>
+ <tr>
+ <td>56</td>
+ <td> Praveen Rajendran</td>
+ </tr>
+ <tr>
+ <td>57</td>
+ <td> Binu Muthuretnam</td>
+ </tr>
+ <tr>
+ <td>58</td>
+ <td> Sriram Ravinutala</td>
+ </tr>
+ <tr>
+ <td>59</td>
+ <td> Rohini</td>
+ </tr>
+ <tr>
+ <td>60</td>
+ <td>Pallavi G</td>
+ </tr>
+ <tr>
+ <td>61</td>
+ <td> Julie</td>
+ </tr>
+ <tr>
+ <td>62</td>
+ <td> Bindhu Pynadath</td>
+ </tr>
+ <tr>
+ <td>63</td>
+ <td> V Maheshwaran</td>
+ </tr>
+ <tr>
+ <td>64</td>
+ <td> Chandramohan K</td>
+ </tr>
+ <tr>
+ <td>65</td>
+ <td>Dr. Aswathy L R</td>
+ </tr>
+ <tr>
+ <td>66</td>
+ <td>Vidya </td>
+ </tr>
+ <tr>
+ <td>67</td>
+ <td>Radhika Nair</td>
+ </tr>
+ <tr>
+ <td>68</td>
+ <td>Vinodmon Thachil</td>
+ </tr>
+ <tr>
+ <td>69</td>
+ <td>Pramod M G</td>
+ </tr>
+                </table>
+              </div>
+            </div>
+            <!--end--> 
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="Clear"> </div>
+<div class="FooterBottom">
+  <div class="Wrapper">
+    <div class="FooterBtm1">Copyrights &copy; AORAINDIA 2018</div>
+    <div class="FooterBtm2">Design by <a href="http://krithitechnologies.com/" target="_blank">Krithi</a> </div>
+  </div>
+</div>
+<link rel="stylesheet" href="css/SliderStyle.css" type="text/css" media="screen" />
+<script src="js/jquery.utilcarousel.js"></script> 
+       
+         <script>
+			eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('$(J(){$(\'#I-K\').6({d:\'0\',0:[v,s],e:7,p:q});$(\'#L\').6({d:\'0\',0:[v,H]});$(\'#N-h\').6({d:\'0\',0:[s,G]});$(\'#B\').6({g:7,m:[\'<i c="b-l-a-8"></i>\',\'<i c=" b-o-a-8"></i>\'],f:[[C,5],[n,4],[z,3],[y,2],[x,1]]});$(\'#t-D\').6({k:9,m:[\'<i c="b-l-a-8"></i>\',\'<i c=" b-o-a-8"></i>\'],g:7,j:9});$(\'#t-E\').6({k:9,d:\'0\',0:[M,O],m:[\'<i c="b-l-a-8"></i>\',\'<i c=" b-o-a-8"></i>\'],g:7,j:9});$(\'#u-h\').6({d:\'0\',0:[w,r]});$(\'#u-h-Q\').6({A:5,d:\'0\',0:[w,r],p:q,e:7,k:9});$(\'#W\').6({A:1,f:[[F,1]],e:7});$(\'#V\').6({f:[[X,1],[R,2],[n,3],[S,4],[Y,5]],P:7,j:9});$(\'#T\').6({U:[[n,4],[z,3],[y,2],[x,1]]})});',61,61,'itemWidthRange||||||utilCarousel|true|big|false|open|icon|class|responsiveMode|autoPlay|breakPoints|navigation|showcase||rewind|pagination|left|navigationText|1200|right|interval|3000|210|300|normal|logo|260|200|480|768|992|showItems|navtopbox|1900|imglist|imglist2|1920|360|320|features|function|carousel|simpleImg|100|team|130|mouseWheel|gray|900|1500|portfolio|breakPosints|fullwidth|testimonial1|600|1800'.split('|'),0,{}))
+		</script> 
+        
+        
+        <!--Faculty img scroll-->
+
+</body></html>
+<link rel="stylesheet" href="css/easy-responsive-tabs1.css">
+<script src="js/easy-responsive-tabs.js"></script>
+<script>
+$(document).ready(function () {
+$('#horizontalTab').easyResponsiveTabs({
+type: 'default', //Types: default, vertical, accordion           
+width: 'auto', //auto or any width like 600px
+fit: true,   // 100% fit in a container
+closed: 'accordion', // Start closed if in accordion view
+activate: function(event) { // Callback function if tab is switched
+var $tab = $(this);
+var $info = $('#tabInfo');
+var $name = $('span', $info);
+$name.text($tab.text());
+$info.show();
+}
+});
+$('#verticalTab1').easyResponsiveTabs({
+type: 'vertical',
+width: 'auto',
+fit: true
+});
+});
+</script>

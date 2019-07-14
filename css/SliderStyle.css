@@ -1,0 +1,111 @@
+.util-carousel {
+	display:none;
+	position:relative;
+	-ms-touch-action:pan-y
+}
+.util-carousel .util-wrapper-holder {
+	overflow:hidden;
+	position:relative;
+	width:100%;
+	/*height:130px;*/
+	text-align:center;
+}
+.util-carousel .util-wrapper {
+*zoom:1;
+	position:relative;
+	display:none
+}
+.util-carousel .util-wrapper:before, .util-carousel .util-wrapper:after {
+	display:table;
+	content:"";
+	line-height:0
+}
+.util-carousel .util-wrapper:after {
+	clear:both
+}
+.util-carousel .util-item {
+	float:left;
+	width: 265px;
+}
+.dragging, .dragging * {
+	cursor:url("https://mail.google.com/mail/images/2/closedhand.cur"), move
+}
+.util-theme-default .util-pagination {
+	text-align:center;
+}
+.util-theme-default .util-page span {
+	display:block;
+	width:25px;
+	height:5px;
+	/*background-color:#000000;*/
+-webkit-transition:all .2s;
+-moz-transition:all .2s;
+-o-transition:all .2s;
+transition:all .2s;
+	margin:5px
+}
+.util-theme-default .util-page {
+	display:inline-block;
+	cursor:pointer;
+	zoom:1;
+*display:inline
+}
+.util-theme-default .util-page.active-page span {
+	/*background-color:#555*/
+}
+.util-theme-default .util-page:hover span {
+	/*background-color:#888*/
+}
+.util-theme-default .util-navigation {
+	text-align:center
+}
+.util-theme-default .util-prev, .util-theme-default .util-next {
+	display:inline-block;
+	padding:4px 8px;
+	margin:5px;
+	background-color:#bbb;
+	color:#fff;
+	border-radius:3px;
+	cursor:pointer;
+	font-size:13px;
+line-height:-webkit-transition:all .2s;
+-moz-transition:all .2s;
+-o-transition:all .2s;
+transition:all .2s;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+.util-theme-default .util-prev:hover, .util-theme-default .util-next:hover {
+	background-color:#555
+}
+.util-theme-default .util-disable, .util-theme-default .util-disable:hover {
+	background-color:#bbb;
+	opacity:.4;
+	cursor:default
+}
+.features-carousel .util-page.active-page span {
+	/*background-color:#d90f8e;*/
+	width:25px
+}
+.moredemo {
+	background-color:#fff;
+	padding:50px 10px;
+	text-align:center;
+	display:block;
+	font-size:40px;
+	font-weight:300;
+	text-transform:uppercase;
+	color:#333
+}
+.moredemo:hover {
+	background-color:#469c41;
+	color:#fff
+}
+.bg1 {
+	background:#666
+}
+.no-touch .bg1 {
+	background:url('../images/bg1.jpg.html') center center fixed #666
+}
